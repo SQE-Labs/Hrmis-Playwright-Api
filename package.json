@@ -1,0 +1,19 @@
+{
+    "name": "hrmis-playwright-api",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "test": "npx playwright test",
+        "test:api": "npx playwright test tests/api",
+        "install:playwright": "npx playwright install",
+        "format": "prettier --write ."
+    },
+    "devDependencies": {
+        "@playwright/test": "^1.57.0",
+        "@types/node": "^25.0.3",
+        "dotenv": "^16.0.0",
+        "eslint": "^8.0.0",
+        "prettier": "^2.8.0",
+        "typescript": "^4.9.5"
+    }
+}
