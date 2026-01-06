@@ -47,7 +47,6 @@ export class ApiClient {
         if (/^https?:\/\//i.test(path)) return path;
         if (!baseUrl) return path;
 
-        // ✅ FIXED: template string
         return `${baseUrl.replace(/\/$/, '')}/${path.replace(/^\//, '')}`;
     }
 
