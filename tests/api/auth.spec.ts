@@ -8,6 +8,7 @@ test.describe('Auth API - Signin', () => {
     test('AUTH-PF-001 - Verify user can sign in with valid email & password', async ({ request }) => {
         // Use the helper to verify sign-in both as an integration and a reusable path
         const token = await signInAndGetToken(request);
+        console.log('Obtained Access Token:', token);
         expect(token).toBeTruthy();
 
         // Also verify the full sign-in flow still works (sanity check)
