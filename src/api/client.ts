@@ -76,6 +76,6 @@ export class ApiClient {
     async delete(path: string, options?: RequestOptions) {
         const url = this.buildUrl(path, options?.baseUrl);
         const res = await this.request.delete(url, { headers: this.buildHeaders(options?.headers), params: options?.params });
-        return this.handleResponse(res);
+        return this.handleResponse(res); 
     }
 }
