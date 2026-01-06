@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
-import { ApiClient } from '../../src/api/client';
-import { signIn } from '../../src/endpoints/auth';
-import { validSignin } from '../../src/payloads/auth';
+import { ApiClient } from '../../src/clients/apiClient';
+import { signIn } from '../../src/services/auth.service';
+import { validSignin } from '../../testdata/payloads';
 import { getAuthenticatedClient, signInAndGetToken } from './helpers/authHelper';
 
 test.describe('Auth API - Signin', () => {

@@ -3,7 +3,8 @@
 🔧 Minimal, reusable API testing scaffold using Playwright Test and TypeScript.
 
 ## Structure
-- `src/api` - API client implementation
+- `src/clients` - API client implementation
+- `src/services` - Service layer wrappers around endpoints
 - `src/endpoints` - Endpoint wrappers (reusable per endpoint)
 - `src/payloads` - Test payloads / fixtures
 - `src/utils` - Types and helpers

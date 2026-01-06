@@ -1,7 +1,7 @@
 import { APIRequestContext } from '@playwright/test';
-import { ApiClient } from '../../../src/api/client';
-import { signIn } from '../../../src/endpoints/auth';
-import { validSignin } from '../../../src/payloads/auth';
+import { ApiClient } from '../../../src/clients/apiClient';
+import { signIn } from '../../../src/services/auth.service';
+import { validSignin } from '../../../testdata/payloads';
 
 /**
  * Sign in using the configured valid credentials and return an ApiClient with auth set.
