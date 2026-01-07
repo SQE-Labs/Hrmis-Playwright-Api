@@ -1,19 +1,27 @@
-import { ApiClient, RequestOptions } from '../clients/apiClient';
+import { APIRequestContext } from '@playwright/test';
 import { ENDPOINTS } from '../../constants/endpoints';
+import { RequestBuilder } from '../api/requestBuilder';
+import { RequestOptions } from '../api/request.types';
 
-export const getAssetTypeById = async (
-    client: ApiClient,
+export class AssetManagementService {
+    constructor(
+        private request: RequestBuilder
+    ) {}    
+   async getAssetTypeById (
+    
     assetTypeId: string | number,
     options?: RequestOptions
-) => {
+)  {
     // Use absolute URL from typed wrapper so calls don't depend on Playwright baseURL
-    return client.get(ENDPOINTS.GET_ASSET_TYPE_BY_ID + `/${assetTypeId}`, options);
+    return await this.request.get(ENDPOINTS.GET_ASSET_TYPE_BY_ID + `/${assetTypeId}`, options);
 };
 
-export const getAllAssetTypes = async (
-    client: ApiClient,
-    options?: RequestOptions
-) => {
+ async getAllAssetTypes (  options?: RequestOptions)  {
     // Use absolute URL from typed wrapper so calls don't depend on Playwright baseURL
-    return client.get(ENDPOINTS.GET_ASSET_TYPE_BY_ID, options);
+     
+    let response= await this.request.get(ENDPOINTS.GET_ASSET_TYPE_BY_ID, options);
+    console.log("Asset Types response:", response);
+
+     return response
 };
+}

@@ -1,13 +1,10 @@
-import { test, expect } from '@playwright/test';
-import { getAllAssetTypes } from '../../../src/services/assetmanagement.service';
-import { getAuthenticatedClient } from '../helpers/authHelper';
+import { test, expect } from '../../fixtures/role.fixtures';
 
 test.describe('Asset Management API - Asset Summary', () => {
 
-  test('IM_16 - Verify assettype summary is returned correctly for Super Admin user', async ({ request }) => {
-    const client = await getAuthenticatedClient(request);
+  test('IM_16 - Verify assettype summary is returned correctly for Super Admin user', async ({ apiAsSuperAdmin }) => {
 
-    const res = await getAllAssetTypes(client);
+    const res = await apiAsSuperAdmin.assets.getAllAssetTypes();
 
     // 1 Status validation
     expect(res.status).toBe(200);
@@ -22,8 +19,8 @@ test.describe('Asset Management API - Asset Summary', () => {
     res.body.data.forEach((asset: any) => {
 
       // 4 Type validations
-      expect(typeof asset.assestType).toBe('string');
-      expect(typeof asset.assetTpeId).toBe('number');
+      expect(typeof asset.assetType).toBe('string');
+      expect(typeof asset.assetTypeId).toBe('number');
 
       expect(typeof asset.available).toBe('number');
       expect(typeof asset.assigned).toBe('number');
@@ -36,6 +33,28 @@ test.describe('Asset Management API - Asset Summary', () => {
         asset.available + asset.assigned + asset.allocated
       );
     });
+
+    console.log(
+      'Validated Asset Summary:',
+      JSON.stringify(res.body.data, null, 2)
+    );
+  });
+
+  // New test case for another valid user
+
+  test('IM_16 - Verify assettype summary is returned correctly for another valid user', async ({ apiAsSuperAdmin }) => {
+
+    const res = await apiAsSuperAdmin.assets.getAllAssetTypes();
+
+    // Status code validation
+    expect(res.status).toBe(200);
+
+    // Body should exist
+    expect(res.body).toBeTruthy();
+
+    // Structure validation
+    expect(res.body).toHaveProperty('data');
+    expect(Array.isArray(res.body.data)).toBe(true);
 
     console.log(
       'Validated Asset Summary:',

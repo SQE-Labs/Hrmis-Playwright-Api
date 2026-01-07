@@ -1,4 +1,4 @@
-import { ApiClient, RequestOptions } from '../clients/apiClient';
+import { ApiClient, RequestOptions } from '../api/requestBuilder';
 import { ENDPOINTS } from '../../constants/endpoints';
 
 export const getUsers = async (
