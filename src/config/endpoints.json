@@ -3,6 +3,7 @@
         "signin": "https://topuptalent.com/HRMBackendTest/api/auth/signin"
     },
     "user": {
-        "list": "https://topuptalent.com/HRMBackendTest/user"
+        "list": "https://topuptalent.com/HRMBackendTest/user",
+        "onboarding": "https://topuptalent.com/HRMBackendTest/onboarding"
     }
 }

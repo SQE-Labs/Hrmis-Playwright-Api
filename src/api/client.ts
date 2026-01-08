@@ -66,6 +66,12 @@ export class ApiClient {
         const res = await this.request.post(url, { headers: this.buildHeaders(options?.headers), data: payload });
         return this.handleResponse(res);
     }
+ 
+    async multipartPost(path: string, formData: any[], options?: RequestOptions) {
+        const url = this.buildUrl(path, options?.baseUrl);
+        const res = await this.request.post(url, { headers: this.buildHeaders(options?.headers), data: formData });
+        return this.handleResponse(res);
+    }
 
     async put(path: string, payload?: any, options?: RequestOptions) {
         const url = this.buildUrl(path, options?.baseUrl);

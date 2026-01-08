@@ -2,7 +2,7 @@ import endpointsRaw from '../config/endpoints.json';
 
 export type EndpointsShape = {
     auth: { signin: string };
-    user: { list: string };
+    user: { list: string; onboarding: string };
 };
 
 export const endpoints: EndpointsShape = endpointsRaw as unknown as EndpointsShape;
