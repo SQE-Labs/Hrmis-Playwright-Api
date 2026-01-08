@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { getEmployeeLeaveDetails } from '../../../../src/services/attendance&leave';
+import { getEmployeeLeaveDetails } from '../../../src/services/attendance&leave';
 import { getAuthenticatedClient } from '../../helpers/authHelper';
 
 
@@ -8,6 +8,7 @@ test.describe('Attendance & Leave API', () => {
         const client = await getAuthenticatedClient(request);
 
         const employeeId = 271;
+        
         const res = await getEmployeeLeaveDetails(client, employeeId);
 
         expect(res.status).toBe(200);

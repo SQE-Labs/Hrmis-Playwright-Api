@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { getLeaveTypes } from '../../../../src/services/attendance&leave';
+import { getLeaveTypes } from '../../../src/services/attendance&leave';
 import { getAuthenticatedClient } from '../../helpers/authHelper';
 
 test.describe('Attendance & Leave API', () => {

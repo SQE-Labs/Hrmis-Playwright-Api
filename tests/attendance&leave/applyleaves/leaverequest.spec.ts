@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { getLeaveRequests } from '../../../../src/services/attendance&leave';
+import { getLeaveRequests } from '../../../src/services/attendance&leave';
 import { getAuthenticatedClient } from '../../helpers/authHelper';
 
 test.describe('Attendance & Leave API', () => {
@@ -13,7 +13,7 @@ test.describe('Attendance & Leave API', () => {
 
 
         expect(res.status).toBe(200);
-        expect(res.headers['content-type']).toContain('application/json');
+        expect(res.headers!['content-type']).toContain('application/json');
 
         expect(res.body).toEqual(
             expect.objectContaining({

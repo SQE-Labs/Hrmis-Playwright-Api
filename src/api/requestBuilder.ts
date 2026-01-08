@@ -2,6 +2,13 @@
 import { APIRequestContext, APIResponse } from '@playwright/test';
 import { RequestOptions } from './request.types';
 
+export interface BuiltResponse<T = any> {
+  status: number;
+  body: T;
+  headers?: Record<string, string>;
+  raw: APIResponse;
+}
+
 export class RequestBuilder {
   constructor(
     private api: APIRequestContext,
@@ -33,42 +40,70 @@ export class RequestBuilder {
   async get<T = any>(
     url: string,
     options?: RequestOptions<T>
-  ): Promise<APIResponse> {
-    return this.api.get(url, {
+  ): Promise<BuiltResponse<T>> {
+    const res = await this.api.get(url, {
       headers: this.buildHeaders(options?.headers),
       params: this.buildParams(options?.params),
     });
+    let body: any;
+    try {
+      body = await res.json();
+    } catch {
+      body = await res.body();
+    }
+    return { status: res.status(), body, headers: res.headers(), raw: res };
   }
 
   async post<T>(
     url: string,
     options?: RequestOptions<T>
-  ): Promise<APIResponse> {
-    return this.api.post(url, {
+  ): Promise<BuiltResponse<T>> {
+    const res = await this.api.post(url, {
       headers: this.buildHeaders(options?.headers),
       params: this.buildParams(options?.params),
       data: options?.body,
     });
+    let body: any;
+    try {
+      body = await res.json();
+    } catch {
+      body = await res.body();
+    }
+    return { status: res.status(), body, raw: res };
   }
 
   async put<T>(
     url: string,
     options?: RequestOptions<T>
-  ): Promise<APIResponse> {
-    return this.api.put(url, {
+  ): Promise<BuiltResponse<T>> {
+    const res = await this.api.put(url, {
       headers: this.buildHeaders(options?.headers),
       params: this.buildParams(options?.params),
       data: options?.body,
     });
+    let body: any;
+    try {
+      body = await res.json();
+    } catch {
+      body = await res.body();
+    }
+    return { status: res.status(), body, raw: res };
   }
 
   async delete<T = any>(
     url: string,
     options?: RequestOptions<T>
-  ): Promise<APIResponse> {
-    return this.api.delete(url, {
+  ): Promise<BuiltResponse<T>> {
+    const res = await this.api.delete(url, {
       headers: this.buildHeaders(options?.headers),
       params: this.buildParams(options?.params),
     });
+    let body: any;
+    try {
+      body = await res.json();
+    } catch {
+      body = await res.body();
+    }
+    return { status: res.status(), body, raw: res };
   }
 }

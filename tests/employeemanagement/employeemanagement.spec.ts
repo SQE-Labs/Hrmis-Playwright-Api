@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { getEmployees } from '../../../src/services/employeemanagement.service';
+import { getEmployees } from '../../src/services/employeemanagement.service';
 import { getAuthenticatedClient } from '../helpers/authHelper';
 
 test.describe('Employee Management API - Employee Directory', () => {
