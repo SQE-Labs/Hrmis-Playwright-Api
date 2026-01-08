@@ -66,13 +66,13 @@ test.describe('Asset Management API - Asset Summary', () => {
     expect(res.body).toHaveProperty('message');
 
     // Message validation
-    // expect(res.body.message).toBe('Access Denied');
+    expect(res.body.message).toBe('Access denied: insufficient permissions');
 
     // Structure validation
     expect(res.body).toHaveProperty('data');
-    expect(Array.isArray(res.body.data)).toBe(true);
+    expect(res.body.data).toBeNull();
     console.log('Asset Summary for Employee User:', JSON.stringify(res.body, null, 2));  
-    
+
   });
 
 });

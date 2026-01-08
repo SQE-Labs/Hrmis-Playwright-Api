@@ -1,15 +1,13 @@
 import { test, expect } from '@playwright/test';
 import { getEmployeeLeaveDetails } from '../../../src/services/attendance&leave';
-import { getAuthenticatedClient } from '../../helpers/authHelper';
 
 
 test.describe('Attendance & Leave API', () => {
     test('Verify Employee Leave Details', async ({ request }) => {
-        const client = await getAuthenticatedClient(request);
-
         const employeeId = 271;
-        
-        const res = await getEmployeeLeaveDetails(client, employeeId);
+
+        const res = await apiAsSuperAdmin.getEmployeeLeaveDetails(employeeId);
+
 
         expect(res.status).toBe(200);
       

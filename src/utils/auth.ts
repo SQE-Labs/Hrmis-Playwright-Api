@@ -14,18 +14,18 @@ export async function getAuthToken(role: Role): Promise<string> {
 
   const credentials = {
     superadmin: {
-      username: process.env.SUPERADMIN_SIGNIN_EMAIL!,
+      email: process.env.SUPERADMIN_SIGNIN_EMAIL!,
       password: process.env.SUPERADMIN_SIGNIN_PASSWORD!,
     },
     employee: {
-      username: process.env.EMPLOYEE_SIGNIN_EMAIL!,
+      email: process.env.EMPLOYEE_SIGNIN_EMAIL!,
       password: process.env.EMPLOYEE_SIGNIN_PASSWORD!,
     },
   }[role];
 
   const response = await context.post(
     `${process.env.BASE_URL}/HRMBackendTest/api/auth/signin`,
-     {data :credentials}
+     {data :{"email": credentials.email, "password": credentials.password}}
   );
   console.log(`Auth request sent for role ${role}`, { data: credentials });
   console.log(`auth url received for role ${role} :`, `${process.env.BASE_URL}/HRMBackendTest/api/auth/signin`);
