@@ -16,33 +16,21 @@ test.describe('Asset Management API - Asset Summary', () => {
     expect(res.body.data.length).toBeGreaterThan(0);
 
     // 3 Validate each asset record
-    // Log first asset keys to help with property names if API shape differs
-    if (res.body.data.length > 0) console.log('First asset keys:', Object.keys(res.body.data[0]));
     res.body.data.forEach((asset: any) => {
-      // Normalize known API typo fields to expected names
-      const normalized: any = {
-        assetType: asset.assetType ?? asset.assestType ?? asset.asset_type,
-        assetTypeId: asset.assetTypeId ?? asset.assetTpeId ?? asset.asset_type_id,
-        available: asset.available ?? asset.availble ?? 0,
-        assigned: asset.assigned ?? 0,
-        total: asset.total ?? 0,
-        rto: asset.rto ?? 0,
-        allocated: asset.allocated ?? 0,
-      };
 
-      // 4 Type validations (use normalized values)
-      expect(typeof normalized.assetType).toBe('string');
-      expect(typeof normalized.assetTypeId).toBe('number');
+      // 4 Type validations
+      expect(typeof asset.assestType).toBe('string');
+      expect(typeof asset.assetTpeId).toBe('number');
 
-      expect(typeof normalized.available).toBe('number');
-      expect(typeof normalized.assigned).toBe('number');
-      expect(typeof normalized.total).toBe('number');
-      expect(typeof normalized.rto).toBe('number');
-      expect(typeof normalized.allocated).toBe('number');
+      expect(typeof asset.available).toBe('number');
+      expect(typeof asset.assigned).toBe('number');
+      expect(typeof asset.total).toBe('number');
+      expect(typeof asset.rto).toBe('number');
+      expect(typeof asset.allocated).toBe('number');
 
       // 5 Business logic validation
-      expect(normalized.total).toBeGreaterThanOrEqual(
-        normalized.available + normalized.assigned + normalized.allocated
+      expect(asset.total).toBeGreaterThanOrEqual(
+        asset.available + asset.assigned + asset.allocated
       );
     });
 
