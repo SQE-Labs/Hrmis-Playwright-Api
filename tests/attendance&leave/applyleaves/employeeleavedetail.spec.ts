@@ -1,17 +1,15 @@
-import { test, expect } from '@playwright/test';
-import { AttendanceAndLeaveService } from '../../../../src/services/attendance&leave';
-import { getAuthenticatedClient } from '../../helpers/authHelper';
+import { test, expect } from '../../../fixtures/role.fixtures';
 
 
 test.describe('Attendance & Leave API', () => {
-    test('Verify Employee Leave Details', async ({ request }) => {
-        const client = await getAuthenticatedClient(request);
-
+    test('Verify Employee Leave Details', async ({ apiAsSuperAdmin }) => {
         const employeeId = 271;
-        const res = await new AttendanceAndLeaveService().getEmployeeLeaveDetails(client, employeeId);
+
+        const res = await apiAsSuperAdmin.attendanceAndLeave.getEmployeeLeaveDetails(employeeId);
+
 
         expect(res.status).toBe(200);
-      
+
         expect(res.body).toHaveProperty('data');
         expect(res.body.data).toBeInstanceOf(Object);
 

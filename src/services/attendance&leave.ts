@@ -1,43 +1,27 @@
-import { ENDPOINTS } from "../../constants/endpoints";
-import { ApiClient } from "../clients/apiClient";
+import { RequestBuilder } from '../api/requestBuilder';
+import { ENDPOINTS } from '../../constants/endpoints';
 
-export class AttendanceAndLeaveService {
-    async getUsers(
-        client: ApiClient
-    ) {
-        return client.get(ENDPOINTS.GET_USERS);
+export class AttendanceAndLeave {
+    constructor(private client: RequestBuilder) { }
+
+    getUsers() {
+        return this.client.get(ENDPOINTS.GET_USERS);
     }
 
-    async getLeaveTypes(
-        client: ApiClient
-    ) {
-        return client.get(ENDPOINTS.GET_LEAVE_TYPES);
+    getLeaveTypes() {
+        return this.client.get(ENDPOINTS.GET_LEAVE_TYPES);
     }
 
-    async getEmployeeLeaveDetails(
-        client: ApiClient,
-        leaveId: number | string
-    ) {
-        return client.get(ENDPOINTS.GET_EMPLOYEE_LEAVE_DETAILS(leaveId));
-    }
-
-    async getLeaveRequests(
-        client: ApiClient,
-        params?: {
-            pageSize?: number;
-            page?: number;
-        }
-    ) {
-        return client.get(
-            ENDPOINTS.GET_LEAVE_REQUEST,
-            { params: params as Record<string, string | number> }
+    getEmployeeLeaveDetails(leaveId: number | string) {
+        return this.client.get(
+            ENDPOINTS.GET_EMPLOYEE_LEAVE_DETAILS(leaveId)
         );
     }
 
-    async applyLeave(
-        client: ApiClient,
-        payload: Record<string, any>
-    ) {
-        return client.post(ENDPOINTS.POST_APPLY_LEAVE, payload);
+    getLeaveRequests(params?: { pageSize?: number; page?: number }) {
+        return this.client.get(
+            ENDPOINTS.GET_LEAVE_REQUEST,
+            { params: params as Record<string, string> }
+        );
     }
 }

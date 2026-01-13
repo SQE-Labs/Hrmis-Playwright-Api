@@ -1,19 +1,14 @@
-import { test, expect } from '@playwright/test';
-import { AttendanceAndLeaveService } from '../../../../src/services/attendance&leave';
-import { getAuthenticatedClient } from '../../helpers/authHelper';
+import { test, expect } from '../../../fixtures/role.fixtures';
 
 test.describe('Attendance & Leave API', () => {
-    test('Verify Leave Requests', async ({ request }) => {
-        const client = await getAuthenticatedClient(request);
-
+    test('Verify Leave Requests', async ({ apiAsSuperAdmin }) => {
         const pageSize = 10;
         const page = 1;
 
-        const res = await new AttendanceAndLeaveService().getLeaveRequests(client, { pageSize , page });
-
+        const res = await apiAsSuperAdmin.attendanceAndLeave.getLeaveRequests({ pageSize, page });
 
         expect(res.status).toBe(200);
-        expect(res.headers['content-type']).toContain('application/json');
+        expect(res.headers!['content-type']).toContain('application/json');
 
         expect(res.body).toEqual(
             expect.objectContaining({

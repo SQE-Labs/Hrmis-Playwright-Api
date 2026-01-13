@@ -1,14 +1,9 @@
-import { test, expect } from '@playwright/test';
-import { getLeaveTypes } from '../../../../src/services/attendance&leave';
-import { getAuthenticatedClient } from '../../helpers/authHelper';
+import { test, expect } from '../../../fixtures/role.fixtures';
 
 test.describe('Attendance & Leave API', () => {
-    test('Verify Leave Types', async ({ request }) => {
+    test('Verify Leave Types', async ({ apiAsSuperAdmin }) => {
 
-        const client = await getAuthenticatedClient(request);
-
-        // Call getLeaveTypes endpoint
-        const res = await getLeaveTypes(client);
+        const res = await apiAsSuperAdmin.attendanceAndLeave.getLeaveTypes();
 
         // Status and contract
         expect(res.status).toBe(200);
