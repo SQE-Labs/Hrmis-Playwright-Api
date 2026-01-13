@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { getLeaveRequests } from '../../../../src/services/attendance&leave';
+import { AttendanceAndLeaveService } from '../../../../src/services/attendance&leave';
 import { getAuthenticatedClient } from '../../helpers/authHelper';
 
 test.describe('Attendance & Leave API', () => {
@@ -9,7 +9,7 @@ test.describe('Attendance & Leave API', () => {
         const pageSize = 10;
         const page = 1;
 
-        const res = await getLeaveRequests(client, { pageSize, page });
+        const res = await new AttendanceAndLeaveService().getLeaveRequests(client, { pageSize , page });
 
 
         expect(res.status).toBe(200);

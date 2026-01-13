@@ -1,26 +1,43 @@
-import { ApiClient, RequestOptions } from '../clients/apiClient';
-import { ENDPOINTS } from '../../constants/endpoints';
+import { ENDPOINTS } from "../../constants/endpoints";
+import { ApiClient } from "../clients/apiClient";
 
-export const getUsers = async (
-    client: ApiClient,
-) => {
-    return client.get(ENDPOINTS.GET_USERS)
-};
+export class AttendanceAndLeaveService {
+    async getUsers(
+        client: ApiClient
+    ) {
+        return client.get(ENDPOINTS.GET_USERS);
+    }
 
-export const getLeaveTypes = async (
-    client: ApiClient,
-) => {
-    return client.get(ENDPOINTS.GET_LEAVE_TYPES);
-};
-export const getEmployeeLeaveDetails = async (
-    client: ApiClient,
-    leaveId: number | string,
-) => {
-    return client.get(ENDPOINTS.GET_EMPLOYEE_LEAVE_DETAILS(leaveId));
-};
-export const getLeaveRequests = async (
-    client: ApiClient,
-    params?:{pageSize?:number,page?:number}
-) => {
-    return client.get(ENDPOINTS.GET_LEAVE_REQUEST, { params: params as Record<string, string> } );
-};
+    async getLeaveTypes(
+        client: ApiClient
+    ) {
+        return client.get(ENDPOINTS.GET_LEAVE_TYPES);
+    }
+
+    async getEmployeeLeaveDetails(
+        client: ApiClient,
+        leaveId: number | string
+    ) {
+        return client.get(ENDPOINTS.GET_EMPLOYEE_LEAVE_DETAILS(leaveId));
+    }
+
+    async getLeaveRequests(
+        client: ApiClient,
+        params?: {
+            pageSize?: number;
+            page?: number;
+        }
+    ) {
+        return client.get(
+            ENDPOINTS.GET_LEAVE_REQUEST,
+            { params: params as Record<string, string | number> }
+        );
+    }
+
+    async applyLeave(
+        client: ApiClient,
+        payload: Record<string, any>
+    ) {
+        return client.post(ENDPOINTS.POST_APPLY_LEAVE, payload);
+    }
+}

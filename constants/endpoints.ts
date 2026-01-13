@@ -5,5 +5,6 @@ export const ENDPOINTS = {
     GET_LEAVE_TYPES: '/HRMBackendTest/leave/v2/types',
     GET_EMPLOYEE_LEAVE_DETAILS: (leaveId: number | string) =>
         `/HRMBackendTest/leave/masterleave/${leaveId}`,
-    GET_LEAVE_REQUEST:'/HRMBackendTest/leave'
+    GET_LEAVE_REQUEST: '/HRMBackendTest/leave',
+    POST_APPLY_LEAVE: '/HRMBackendTest/leave/leaveApply',
 }
