@@ -1,7 +1,7 @@
 import { test, expect } from '../../../fixtures/role.fixtures';
 
 test.describe('Attendance & Leave API', () => {
-    test('Verify Leave Requests', async ({ apiAsSuperAdmin }) => {
+    test('Verify Leave Requests Super Admin', async ({ apiAsSuperAdmin }) => {
         const pageSize = 10;
         const page = 1;
 
@@ -46,6 +46,35 @@ test.describe('Attendance & Leave API', () => {
             }
         });
         // console.log('Fetched Leave Requests:', res.body.data);
+    });
+
+    test('Verify Leave Requests Employee - Empty Response', async ({ apiAsEmployee }) => {
+        const pageSize = 10;
+        const page = 1;
+
+        const res = await apiAsEmployee.attendanceAndLeave.getLeaveRequests({
+            pageSize,
+            page,
+        });
+
+        // Status & headers
+        expect(res.status).toBe(200);
+        expect(res.headers?.['content-type']).toContain('application/json');
+
+        // Top-level response structure
+        expect(res.body).toEqual(
+            expect.objectContaining({
+                totalPages: expect.any(Number),
+                totalLeave: expect.any(Number),
+                data: expect.any(Array),
+            })
+        );
+
+        // Empty data validations (based on actual response)
+        expect(res.body.data).toHaveLength(0);
+        expect(res.body.totalLeave).toBe(0);
+        expect(res.body.totalPages).toBe(0);
+        console.log('Leave Requests for Employee User:', JSON.stringify(res.body, null, 2));
     });
 
 });

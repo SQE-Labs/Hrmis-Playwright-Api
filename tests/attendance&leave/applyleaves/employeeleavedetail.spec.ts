@@ -2,11 +2,10 @@ import { test, expect } from '../../../fixtures/role.fixtures';
 
 
 test.describe('Attendance & Leave API', () => {
-    test('Verify Employee Leave Details', async ({ apiAsSuperAdmin }) => {
+    test('Verify Employee Leave Details Super Admin', async ({ apiAsSuperAdmin }) => {
         const employeeId = 271;
 
         const res = await apiAsSuperAdmin.attendanceAndLeave.getEmployeeLeaveDetails(employeeId);
-
 
         expect(res.status).toBe(200);
 
@@ -39,5 +38,19 @@ test.describe('Attendance & Leave API', () => {
         expect(data.maternityLeave).toBeLessThanOrEqual(0);
 
         // console.log('Fetched Employee Leave Details:', data);
+    });
+    test('Verify Employee Leave Details Employee ', async ({ apiAsEmployee }) => {
+        const employeeId = 271;
+
+        const res = await apiAsEmployee.attendanceAndLeave.getEmployeeLeaveDetails(employeeId);
+
+        expect(res.status).toBe(403);
+
+        expect(res.body).toEqual({
+            statusCode: 403,
+            message: 'Access denied: insufficient permissions',
+            data: null,
+        });
+        //console.log('Response Body for Employee User:', JSON.stringify(res.body, null, 2));
     });
 });

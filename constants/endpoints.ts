@@ -8,4 +8,8 @@ export const ENDPOINTS = {
         `/HRMBackendTest/leave/masterleave/${leaveId}`,
     GET_LEAVE_REQUEST: '/HRMBackendTest/leave',
     POST_APPLY_LEAVE: '/HRMBackendTest/leave/leaveApply',
+    PUT_WITHDRAW_LEAVE: '/HRMBackendTest/leave/leave/withdraw',
+    GET_MY_TEAM_LEAVE: '/HRMBackendTest/leave/leave/approver/manager',
+    PUT_APPROVE_REJECT_LEAVE: '/HRMBackendTest/leave/us/leave/approve',
+
 }
