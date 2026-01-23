@@ -2,6 +2,8 @@ import { test, expect } from '../../fixtures/role.fixtures';
 
 test.describe('Asset Management API - Asset Summary', () => {
 
+  // Test case for Super Admin user
+
   test('IM_16 - Verify assettype summary is returned correctly for Super Admin user', async ({ apiAsSuperAdmin }) => {
 
     const res = await apiAsSuperAdmin.assets.getAllAssetTypes();
@@ -40,7 +42,10 @@ test.describe('Asset Management API - Asset Summary', () => {
     );
   });
 
-  // New test case for employee user
+
+
+
+  // Test case for employee user
 
   test('IM_16 - Verify assettype summary is returned correctly for another valid user', async ({ apiAsEmployee }) => {
 

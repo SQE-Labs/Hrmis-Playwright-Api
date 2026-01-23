@@ -28,7 +28,7 @@ test.describe.serial('Attendance & Leave API', () => {
         );
         expect(myTeamLeaveRes.status).toBe(200);
         expect(myTeamLeaveRes.body).toHaveProperty('message');
-        expect(myTeamLeaveRes.body.message).toBe('Leave REJECTED successfully.');
+        expect((myTeamLeaveRes.body as any).message).toBe('Leave REJECTED successfully.');
         expect(myTeamLeaveRes.body).toHaveProperty('data');
         console.log('Approve/Reject Response:', myTeamLeaveRes.body);
     });
