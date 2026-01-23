@@ -32,4 +32,12 @@ async getAssetListSummary (  options?: RequestOptions)  {
     console.log("Asset List Summary response:", response);
         return response
     };
+
+async getAssetAllocatedListSummary (  options?: RequestOptions)  {
+    // Use absolute URL from typed wrapper so calls don't depend on Playwright baseURL
+
+    let response= await this.request.get(ENDPOINTS.GET_ASSET_ALLOCATED_LIST_SUMMARY, options);
+    console.log("Asset Allocated List Summary response:", response);
+        return response
+    };
 }
