@@ -14,7 +14,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: "${params.BRANCH}",
-                    url: 'https://github.com/SQE-Labs/HRMIS-Playwright.git'
+                    url: 'https://github.com/SQE-Labs/Hrmis-Playwright-Api.git'
                 echo "Checked out branch: ${params.BRANCH}"
             }
         }
