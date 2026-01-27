@@ -19,7 +19,8 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 git branch: "${params.BRANCH}",
-                    url: 'https://github.com/SQE-Labs/Hrmis-Playwright-Api.git',
+                    url: 'https://github.com/SQE-Labs/Hrmis-Playwright-Api.git'
+                     
             }
         }
 
