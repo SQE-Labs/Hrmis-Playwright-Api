@@ -8,9 +8,10 @@ export default defineConfig({
     use: {
         baseURL: process.env.BASE_URL,
         trace: 'on-first-retry',
-        ignoreHTTPSErrors: true
+        ignoreHTTPSErrors: true,
     },
     reporter: [
-        ['html', { open: 'on-failure' }] // Generates HTML report and opens on failure
+        ['html', { open: 'on-failure' }],          // HTML report
+        ['json', { outputFile: 'playwright-report/results.json' }]  // JSON report
     ]
 });
