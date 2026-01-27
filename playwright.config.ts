@@ -9,5 +9,8 @@ export default defineConfig({
         baseURL: process.env.BASE_URL,
         trace: 'on-first-retry',
         ignoreHTTPSErrors: true
-    }
+    },
+    reporter: [
+        ['html', { open: 'on-failure' }] // Generates HTML report and opens on failure
+    ]
 });
