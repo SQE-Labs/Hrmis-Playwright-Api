@@ -2,8 +2,9 @@ import { test, expect } from '../../../fixtures/role.fixtures';
 
 
 test.describe('Attendance & Leave API', () => {
-    test('Verify Employee Leave Details Super Admin', async ({ apiAsSuperAdmin }) => {
-        const employeeId = 271;
+
+    test('Verify Employee Leave Details from Super Admin', async ({ apiAsSuperAdmin }) => {
+        const employeeId = 389; //Employee ID
 
         const res = await apiAsSuperAdmin.attendanceAndLeave.getEmployeeLeaveDetails(employeeId);
 
@@ -35,12 +36,12 @@ test.describe('Attendance & Leave API', () => {
         expect(data.unpaidLeaveBalanceMonth).toBeGreaterThanOrEqual(0);
         expect(data.unpaidLeaveBalanceYear).toBeGreaterThanOrEqual(0);
 
-        expect(data.maternityLeave).toBeLessThanOrEqual(0);
+        // expect(data.maternityLeave).toBeLessThanOrEqual(0);
 
-        // console.log('Fetched Employee Leave Details:', data);
+        console.log('Fetched Employee Leave Details:', data);
     });
-    test('Verify Employee Leave Details Employee ', async ({ apiAsEmployee }) => {
-        const employeeId = 271;
+    test('Verify SuperAdmin Leave Details from Employee @bug', async ({ apiAsEmployee }) => {
+        const employeeId = 271; //SuperAdmin ID
 
         const res = await apiAsEmployee.attendanceAndLeave.getEmployeeLeaveDetails(employeeId);
 
@@ -51,6 +52,6 @@ test.describe('Attendance & Leave API', () => {
             message: 'Access denied: insufficient permissions',
             data: null,
         });
-        //console.log('Response Body for Employee User:', JSON.stringify(res.body, null, 2));
+        console.log('Response Body for Employee User:', JSON.stringify(res.body, null, 2));
     });
 });

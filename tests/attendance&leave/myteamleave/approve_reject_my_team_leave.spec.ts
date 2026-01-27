@@ -34,10 +34,27 @@ test.describe.serial('Attendance & Leave API', () => {
     });
 });
 
-test.describe("Approve/Reject My Team Leave Requests", () => {  
-    test("Should require valid authentication", async ({apiAsEmployee }) => {
+test.describe.serial("Approve/Reject My Team Leave Requests", () => {
+    let laveId: number;
+
+    test('Setup - Apply Leave for Employee1 to be Approved/Rejected', async ({ apiAsEmployee }) => {
+
+        const res = await apiAsEmployee.attendanceAndLeave.postApplyLeave(applyleavePayload);
+        expect(res.status).toBe(200);
+        expect(res.body).toHaveProperty('message');
+        expect(res.body.message).toBe('Leave Applied Successfully! Wait for Approval.');
+        const leave = await apiAsEmployee.attendanceAndLeave.getLeaveRequests({
+            page: 1,
+            pageSize: 10,
+        });
+        expect(leave.status).toBe(200);
+        laveId = leave.body.data[0].laveId;
+        console.log('Leave ID:', laveId);
+        console.log(res.body);
+    });
+    test("Should require valid authentication", async ({ apiAsEmployee }) => {
         const response = await apiAsEmployee.attendanceAndLeave.putApproveRejectMyTeamLeave(
-            
+            726,
             "APPROVED",
             "Approving leave"
         );

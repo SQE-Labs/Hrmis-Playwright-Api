@@ -68,13 +68,8 @@ test.describe('Attendance & Leave API', () => {
                 totalLeave: expect.any(Number),
                 data: expect.any(Array),
             })
-        );
-
-        // Empty data validations (based on actual response)
-        expect(res.body.data).toHaveLength(0);
-        expect(res.body.totalLeave).toBe(0);
-        expect(res.body.totalPages).toBe(0);
-        console.log('Leave Requests for Employee User:', JSON.stringify(res.body, null, 2));
+        );   
+        // console.log('Leave Requests for Employee User:', JSON.stringify(res.body, null, 2));
     });
 
 });

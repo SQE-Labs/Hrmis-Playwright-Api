@@ -66,7 +66,7 @@ export class AttendanceAndLeave {
         reason?: string
     ) {
         return this.client.put(
-            ENDPOINTS.PUT_APPROVE_REJECT_LEAVE,
+            ENDPOINTS.GET_MY_TEAM_LEAVE,
             {
                 params: {
                     leaveId,
