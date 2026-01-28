@@ -4,6 +4,7 @@ export const ENDPOINTS = {
     GET_ASSET_TYPE_BY_ID: '/HRMBackendTest/assest/total?owner=ALL&assestTypeId=0',
     GET_ASSET_LIST_SUMMARY: '/HRMBackendTest/assest/list',
     GET_ASSET_ALLOCATED_LIST_SUMMARY: '/HRMBackendTest/assest?pageSize=10&page=1',
+    GET_USERS_LIST: '/HRMBackendTest/user',
     GET_USERS: '/HRMBackendTest/user',
     GET_LEAVE_TYPES: '/HRMBackendTest/leave/v2/types',
     GET_EMPLOYEE_LEAVE_DETAILS: (leaveId: number | string) =>
