@@ -53,6 +53,7 @@ test.describe('Asset Management API - Asset Summary', () => {
         const res = await apiAsEmployee.assets.getAssetAllocatedListSummary();
         // Status code validation
         expect(res.status).toBe(403);
+        
         // Body should exist
         expect(res.body).toBeTruthy();
         expect(res.body).toHaveProperty('message');

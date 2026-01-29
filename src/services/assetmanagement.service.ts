@@ -47,4 +47,18 @@ async getUsersList (  options?: RequestOptions)  {
     console.log("Users List response:", response);
         return response
     };
+
+async getAssetAssignedToUser (  options?: RequestOptions)  {
+    // Use absolute URL from typed wrapper so calls don't depend on Playwright baseURL  
+    let response= await this.request.get(ENDPOINTS.GET_ASSET_ASSIGNED_TO_USER, options);
+    console.log("Asset Assigned To User response:", response);
+        return response
+    }
+
+async getAssetRequestPageList ( options?: RequestOptions)  {
+
+    let response = await this.request.get(ENDPOINTS.GET_ASSET_REQUEST_PAGE_LIST, options);
+    console.log("Asset Request Page List:", response);
+        return response
+    }
 }
