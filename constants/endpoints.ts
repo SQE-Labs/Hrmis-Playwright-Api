@@ -7,6 +7,7 @@ export const ENDPOINTS = {
     GET_USERS_LIST: '/HRMBackendTest/user',
     GET_ASSET_ASSIGNED_TO_USER: '/HRMBackendTest/assest?employeeId=271',
     GET_ASSET_REQUEST_PAGE_LIST: '/HRMBackendTest/assest/assestRequestList?pageSize=10&page=1',
+    GET_ASSET_ACCESS_REQUEST_PAGE_LIST: '/HRMBackendTest/api/access/requests/employee/271?pageSize=10&pageNo=1&status=',
     GET_USERS: '/HRMBackendTest/user',
     GET_LEAVE_TYPES: '/HRMBackendTest/leave/v2/types',
     GET_EMPLOYEE_LEAVE_DETAILS: (leaveId: number | string) =>
