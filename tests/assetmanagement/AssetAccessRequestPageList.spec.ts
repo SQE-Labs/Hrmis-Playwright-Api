@@ -11,6 +11,7 @@ test.describe('Asset Management API - Asset Assigned To User', () => {
         // 2 Body level validation
         expect(res.body).toBeTruthy();
         expect(res.body).toHaveProperty('message');
+        expect(res.body.message).toBe('Access requests fetched successfully.');
         expect(res.body).toHaveProperty('data');
         expect(res.body.data).toHaveProperty('content');
 
@@ -42,6 +43,7 @@ test.describe('Asset Management API - Asset Assigned To User', () => {
         // 2 Body level validation
         expect(res.body).toBeTruthy();
         expect(res.body).toHaveProperty('message');
+        expect(res.body.message).toBe('Access requests fetched successfully.');
         expect(res.body).toHaveProperty('data');
         expect(res.body.data).toHaveProperty('content');
         expect(typeof res.body.message).toBe('string');
