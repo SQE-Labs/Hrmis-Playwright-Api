@@ -70,9 +70,16 @@ async getAssetAccessRequestPageList ( options?: RequestOptions)  {
     }
 
 async getAssetAccessRequestDlList ( options?: RequestOptions)  {
-    
+
     let response = await this.request.get(ENDPOINTS.GET_ASSET_ACCESS_REQUEST_PAGE_DL_LIST, options);
     console.log("Asset Access Request DL List:", response);
+        return response
+    }
+
+async getAssetAccessRequestStatusApproved ( options?: RequestOptions)  {
+
+    let response = await this.request.get(ENDPOINTS.GET_ASSET_ACCESS_REQUEST_STATUS_APPROVED, options);
+    console.log("Asset Access Request Status Approved List:", response);
         return response
     }
 }
