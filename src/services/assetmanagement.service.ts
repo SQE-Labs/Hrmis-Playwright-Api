@@ -82,4 +82,11 @@ async getAssetAccessRequestStatusApproved ( options?: RequestOptions)  {
     console.log("Asset Access Request Status Approved List:", response);
         return response
     }
+
+async getActiveProjects ( options?: RequestOptions)  {
+
+    let response = await this.request.get(ENDPOINTS.GET_ACTIVE_PROJECTS, options);
+    console.log("Get Active Projects response:", response);
+        return response
+    }
 }
