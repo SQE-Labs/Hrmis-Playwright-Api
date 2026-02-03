@@ -59,7 +59,7 @@ test.describe('Asset Management API - Asset Summary', () => {
         expect(res.body).toHaveProperty('message');
 
         // Message validation
-        expect(res.body.message).toBe('Access denied: insufficient permissions');
+        expect(res.body.message).toBe('You are not authorized to access this resource.');
 
         // Structure validation
         expect(res.body).toHaveProperty('data');
