@@ -89,4 +89,11 @@ async getActiveProjects ( options?: RequestOptions)  {
     console.log("Get Active Projects response:", response);
         return response
     }
+
+async getAssetOwnerTypes ( options?: RequestOptions)  {
+
+    let response = await this.request.get(ENDPOINTS.GET_ASSET_OWNER_TYPES, options);
+    console.log("Get Asset Owner Types response:", response);
+        return response
+    }
 }

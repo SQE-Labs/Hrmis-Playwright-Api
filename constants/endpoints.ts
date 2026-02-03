@@ -11,6 +11,7 @@ export const ENDPOINTS = {
     GET_ASSET_ACCESS_REQUEST_PAGE_DL_LIST:'/HRMBackendTest/leave/ood/dl/list',
     GET_ASSET_ACCESS_REQUEST_STATUS_APPROVED: '/HRMBackendTest/api/access/types?status=APPROVED',
     GET_ACTIVE_PROJECTS:'/HRMBackendTest/project/getActiveProjects',
+    GET_ASSET_OWNER_TYPES:'/HRMBackendTest/assest/owner/types',
     GET_USERS: '/HRMBackendTest/user',
     GET_LEAVE_TYPES: '/HRMBackendTest/leave/v2/types',
     GET_EMPLOYEE_LEAVE_DETAILS: (leaveId: number | string) =>
