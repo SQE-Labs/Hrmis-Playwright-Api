@@ -2,7 +2,7 @@ import {test, expect} from '../../fixtures/role.fixtures';
 
 test.describe('Get Asset type request status all - API', () => {
 
-    test('Verify asset access request status approved is returned correctly for Super Admin user', async ({apiAsSuperAdmin}) => {
+    test('IM-29 Verify asset access request status approved is returned correctly for Super Admin user', async ({apiAsSuperAdmin}) => {
         const res = await apiAsSuperAdmin.assets.getAssetTypeRequestStatusAll();
 
         //Status Validation
@@ -50,7 +50,7 @@ test.describe('Get Asset type request status all - API', () => {
         );
     });
 
-    test('Verify asset access request status approved is returned correctly for another valid user', async ({apiAsEmployee}) => {
+    test('IM-29 Verify asset access request status approved is returned correctly for another valid user', async ({apiAsEmployee}) => {
         const res = await apiAsEmployee.assets.getAssetTypeRequestStatusAll();
 
         //Status Validation
