@@ -10,6 +10,7 @@ export const ENDPOINTS = {
     GET_ASSET_ACCESS_REQUEST_PAGE_LIST: '/HRMBackendTest/api/access/requests/employee/271?pageSize=10&pageNo=1&status=',
     GET_ASSET_ACCESS_REQUEST_PAGE_DL_LIST:'/HRMBackendTest/leave/ood/dl/list',
     GET_ASSET_ACCESS_REQUEST_STATUS_APPROVED: '/HRMBackendTest/api/access/types?status=APPROVED',
+    GET_STATUS_CATEGORY_ALL: '/HRMBackendTest/assest/category?status=ALL',
     GET_ACTIVE_PROJECTS:'/HRMBackendTest/project/getActiveProjects',
     GET_ASSET_OWNER_TYPES:'/HRMBackendTest/assest/owner/types',
     GET_USERS: '/HRMBackendTest/user',

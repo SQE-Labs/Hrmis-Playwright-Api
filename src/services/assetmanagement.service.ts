@@ -96,4 +96,11 @@ async getAssetOwnerTypes ( options?: RequestOptions)  {
     console.log("Get Asset Owner Types response:", response);
         return response
     }
+
+async getAssetTypeRequestStatusAll ( options?: RequestOptions) {
+
+    let response = await this.request.get(ENDPOINTS.GET_STATUS_CATEGORY_ALL, options);
+    console.log("Get Asset Type Request Status All:", response);
+        return response
+    }
 }
