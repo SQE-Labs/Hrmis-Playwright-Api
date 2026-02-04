@@ -103,4 +103,18 @@ async getAssetTypeRequestStatusAll ( options?: RequestOptions) {
     console.log("Get Asset Type Request Status All:", response);
         return response
     }
+
+async getAssetTypeRequestStatusPending ( options?: RequestOptions) {
+
+    let response = await this.request.get(ENDPOINTS.GET_STATUS_CATEGORY_PENDING, options);
+    console.log("Get Asset Type Request Status Pending:", response);
+        return response
+    }
+
+async getApproverAssetReqList ( options?: RequestOptions)  {
+
+    let response = await this.request.get(ENDPOINTS.GET_APPROVER_ASSET_REQUEST_LIST, options);
+    console.log("Get Approver Asset Request List:", response);
+        return response
+    }
 }
