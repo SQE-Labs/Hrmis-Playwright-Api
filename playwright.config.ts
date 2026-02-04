@@ -3,7 +3,10 @@ import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
 
-    reporter : [['html', { open: 'never' }], ['list']],
+    reporter: [
+                ['list'],
+                ['html', { open: 'never' }],
+            ],
     testDir: './tests',
     timeout: 30 * 1000,
     expect: { timeout: 5000 },
