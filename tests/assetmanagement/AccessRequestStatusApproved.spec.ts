@@ -3,7 +3,7 @@ import {test, expect} from '../../fixtures/role.fixtures';
 test.describe('Asset Management API - Asset Assigned To User', () => {
 
     test('Verify asset access request status approved is returned correctly for Super Admin user', async ({apiAsSuperAdmin}) => {
-        const res = await apiAsSuperAdmin.assets.getAssetAccessRequestStatusApproved();
+        const res = await apiAsSuperAdmin.assets.getAssetAccessRequestStatusApproved({status: 'APPROVED'});
 
         //Status Validation
         expect(res.status).toBe(200);
@@ -41,7 +41,7 @@ test.describe('Asset Management API - Asset Assigned To User', () => {
     });
 
     test('Verify asset access request status approved is returned correctly for another valid user', async ({apiAsEmployee}) => {
-        const res = await apiAsEmployee.assets.getAssetAccessRequestStatusApproved();
+        const res = await apiAsEmployee.assets.getAssetAccessRequestStatusApproved({status: 'APPROVED'});
 
         //Status Validation
         expect(res.status).toBe(200);

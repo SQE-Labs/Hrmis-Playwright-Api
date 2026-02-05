@@ -4,7 +4,7 @@ test.describe('Asset Management API - Asset Summary', () => {
 
   // Test case for Super Admin user
   test('IM_19 - Verify asset allocated list summary is returned correctly for Super Admin user', async ({ apiAsSuperAdmin }) => {
-    const res = await apiAsSuperAdmin.assets.getAssetAllocatedListSummary();
+    const res = await apiAsSuperAdmin.assets.getAssetAllocatedListSummary({ page: 1, pageSize: 10 });
 
     // 1 Status validation
     expect(res.status).toBe(200);
@@ -50,7 +50,7 @@ test.describe('Asset Management API - Asset Summary', () => {
 
     // Test case for employee user
     test('IM_19 - Verify asset allocated list summary is returned correctly for another valid user', async ({ apiAsEmployee }) => {
-        const res = await apiAsEmployee.assets.getAssetAllocatedListSummary();
+        const res = await apiAsEmployee.assets.getAssetAllocatedListSummary({page: 1, pageSize: 10});
         // Status code validation
         expect(res.status).toBe(403);
         

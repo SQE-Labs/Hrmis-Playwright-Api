@@ -4,7 +4,7 @@ test.describe('Asset Management API - Asset Assigned To User', () => {
 
   test('IM_23 - Verify asset assigned to user is returned correctly for Super Admin user', async ({ apiAsSuperAdmin }) => {
 
-    const res = await apiAsSuperAdmin.assets.getAssetAssignedToUser();
+    const res = await apiAsSuperAdmin.assets.getAssetAssignedToUser({employeeId: 271});
 
     // 1 Status validation
     expect(res.status).toBe(200);
@@ -58,7 +58,7 @@ test.describe('Asset Management API - Asset Assigned To User', () => {
 
   // Test case for employee user
   test('IM_23 - Verify asset assigned to user is returned correctly for another valid user', async ({ apiAsEmployee }) => {
-      const res = await apiAsEmployee.assets.getAssetAssignedToUser();
+      const res = await apiAsEmployee.assets.getAssetAssignedToUser({employeeId: 271});
       // Status code validation
       expect(res.status).toBe(403);
       // Body should exist
