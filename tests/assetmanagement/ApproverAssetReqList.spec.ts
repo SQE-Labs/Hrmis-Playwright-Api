@@ -3,7 +3,7 @@ import {test, expect} from '../../fixtures/role.fixtures';
 test.describe('Get Approver Asset Request List - API', () => {
 
     test('IM-34 Verify approver asset request list is returned correctly for Super Admin user', async ({apiAsSuperAdmin}) => {
-        const res = await apiAsSuperAdmin.assets.getApproverAssetReqList();
+        const res = await apiAsSuperAdmin.assets.getApproverAssetReqList({ page: 0, size: 10 });
 
         //Status Validation
         expect(res.status).toBe(200);
@@ -35,7 +35,7 @@ test.describe('Get Approver Asset Request List - API', () => {
     });
 
     test('IM-34 Verify approver asset request list is returned correctly for another valid user', async ({apiAsEmployee}) => {
-        const res = await apiAsEmployee.assets.getApproverAssetReqList();
+        const res = await apiAsEmployee.assets.getApproverAssetReqList({ page: 0, size: 10 });
 
         //Status Validation
         expect(res.status).toBe(403);

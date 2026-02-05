@@ -3,7 +3,7 @@ import {test, expect} from '../../fixtures/role.fixtures';
 test.describe('Get Asset type request status pending - API', () => {
 
     test('IM-31 Verify asset access request status pending is returned correctly for Super Admin user', async ({apiAsSuperAdmin}) => {
-        const res = await apiAsSuperAdmin.assets.getAssetTypeRequestStatusPending();
+        const res = await apiAsSuperAdmin.assets.getAssetTypeRequestStatusPending({status: 'PENDING'});
 
         //Status Validation
         expect(res.status).toBe(200);
@@ -20,7 +20,7 @@ test.describe('Get Asset type request status pending - API', () => {
     });
 
     test('IM-31 Verify asset access request status pending is returned correctly for another valid user', async ({apiAsEmployee}) => {
-        const res = await apiAsEmployee.assets.getAssetTypeRequestStatusPending();
+        const res = await apiAsEmployee.assets.getAssetTypeRequestStatusPending({status: 'PENDING'});
 
         //Status Validation
         expect(res.status).toBe(403);
