@@ -239,4 +239,23 @@ async getEmployeesDataV2 ( options?: RequestOptions)  {
     console.log("Get Employees Data V2 response:", response);
         return response
     }
+
+async getAccessRequestTypeStatus (
+    params: {
+    status?: string;
+    } = {},
+    options?: RequestOptions)  {
+
+    let response = await this.request.get(
+        ENDPOINTS.GET_ACCESS_REQUEST_TYPE_STATUS,
+        {
+            ...options,
+            params: {
+                status: params.status ?? ''
+            }
+        }
+    );
+    console.log("Get Access Request Type Status response:", response);
+        return response
+    }
 }
