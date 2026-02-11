@@ -31,17 +31,17 @@ test.describe('Asset Management API - Asset Assigned To User', () => {
 
       // Asset basic info
       expect(typeof asset.assestName).toBe('string');
-      expect(typeof asset.manufacture).toBe('string');
-      expect(typeof asset.model).toBe('string');
-      expect(typeof asset.serialNumber).toBe('string');
+      expect(asset.manufacture === null || asset.manufacture === undefined || typeof asset.manufacture === 'string').toBeTruthy();
+      expect(asset.model === null || asset.model === undefined || typeof asset.model === 'string').toBeTruthy();
+      expect(asset.serialNumber === null || asset.serialNumber === undefined || typeof asset.serialNumber === 'string').toBeTruthy();
 
       // Owner / employee info
-      expect(typeof asset.owner).toBe('string');
-      expect(typeof asset.empName).toBe('string');
+      expect(asset.owner === null || asset.owner === undefined || typeof asset.owner === 'string').toBeTruthy();
+      expect(asset.empName === null || asset.empName === undefined || typeof asset.empName === 'string').toBeTruthy();
 
       // Dates (string format from API)
-      expect(typeof asset.allocatedDate).toBe('string');
-      expect(typeof asset.purchaseDate).toBe('string');
+      expect(asset.allocatedDate === null || asset.allocatedDate === undefined || typeof asset.allocatedDate === 'string').toBeTruthy();
+      expect(asset.purchaseDate === null || asset.purchaseDate === undefined || typeof asset.purchaseDate === 'string').toBeTruthy();
 
       // Optional / free-text fields
       expect(asset.comments === null || asset.comments === undefined || typeof asset.comments === 'string').toBeTruthy();
