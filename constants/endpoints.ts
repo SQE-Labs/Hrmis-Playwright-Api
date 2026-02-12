@@ -1,6 +1,7 @@
 export const ENDPOINTS = {
     POST_SIGNIN: '/HRMBackendTest/api/auth/signin',
     GET_PROJECTS_BY_EMPLOYEE: '/HRMBackendTest/project/projects-by-employee/271',
+    GET_USERS_ACCESS: '/HRMBackendTest/menu/v1/users',
     GET_EMPLOYEES: '/HRMBackendTest/user',
     GET_ASSET_TYPE_BY_ID: '/HRMBackendTest/assest/total',
     GET_ASSET_LIST_SUMMARY: '/HRMBackendTest/assest/list',

@@ -18,4 +18,11 @@ export class DashboardService {
 
     }
 
+    async getUserAccess(options?: RequestOptions) {
+
+        let response = await this.request.get(ENDPOINTS.GET_USERS_ACCESS, options);
+
+        console.log("User Access response:", response);
+        return response;
+    };
 };
