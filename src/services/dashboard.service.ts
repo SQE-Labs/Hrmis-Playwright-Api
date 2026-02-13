@@ -25,4 +25,11 @@ export class DashboardService {
         console.log("User Access response:", response);
         return response;
     };
+
+    async getPunchDetails(options?: RequestOptions) {
+
+        let response = await this.request.get(ENDPOINTS.GET_PUNCH_DETAILS, options);
+        console.log("Punch Details response:", response);
+        return response;
+    }
 };
