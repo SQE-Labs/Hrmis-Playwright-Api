@@ -44,10 +44,6 @@ test.describe('Get Asset type request status all - API', () => {
             expect(asset.approvedDate === null || asset.approvedDate === undefined || typeof asset.approvedDate === 'string').toBeTruthy();
         });
 
-        console.log(
-            'Validated Asset Type Request Status All:',
-            JSON.stringify(res.body.data, null, 2)
-        );
     });
 
     test('IM-29 Verify asset access request status approved is returned correctly for another valid user', async ({apiAsEmployee}) => {
@@ -66,8 +62,6 @@ test.describe('Get Asset type request status all - API', () => {
         // Structure validation
         expect(res.body).toHaveProperty('data');
         expect(res.body.data).toBeNull();
-        console.log('Validated Asset Type Request Status All:',
-             JSON.stringify(res.body, null, 2));
     });
 
 });

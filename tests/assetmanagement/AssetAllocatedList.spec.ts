@@ -42,10 +42,6 @@ test.describe('Asset Management API - Asset Summary', () => {
       expect(typeof asset.warrantyExpired).toBe('string');
     });
 
-    console.log(
-      'Validated Asset Allocated List Summary:',
-      JSON.stringify(res.body.data, null, 2)
-    );
   });
 
     // Test case for employee user
@@ -64,8 +60,7 @@ test.describe('Asset Management API - Asset Summary', () => {
         // Structure validation
         expect(res.body).toHaveProperty('data');
         expect(res.body.data).toBeNull();
-        console.log('Asset Summary for Employee User:',
-             JSON.stringify(res.body, null, 2));  
+  
 
   });
 });

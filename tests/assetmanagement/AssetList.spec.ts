@@ -34,10 +34,6 @@ test.describe('Asset Management API - Asset Summary', () => {
       expect(validStatuses).toContain(asset.status);
     });
 
-    console.log(
-      'Validated Asset List Summary:',
-      JSON.stringify(res.body.data, null, 2)
-    );
   });
 
 
@@ -65,10 +61,6 @@ test.describe('Asset Management API - Asset Summary', () => {
             const validStatuses = ['VERIFIED', 'PENDING', 'REJECTED'];
             expect(validStatuses).toContain(asset.status);
         });
-
-        console.log(
-            'Asset List Summary for Employee User:',
-            JSON.stringify(res.body.data, null, 2)
-        );  
+  
     });
 });

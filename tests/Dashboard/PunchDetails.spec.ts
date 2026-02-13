@@ -31,10 +31,6 @@ test.describe('Punch Details', () => {
             expect(typeof punch.is_positive_hour).toBe('boolean');
         });
 
-        console.log(
-            'Validated Punch Details:',
-            JSON.stringify(res.body.data, null, 2)
-        );
     });
 
     test("IM-03: Verify that the punch details are displayed correctly for a specific employee", async ({apiAsEmployee}) => {
@@ -47,9 +43,5 @@ test.describe('Punch Details', () => {
         expect(res.body).toHaveProperty('data');
         expect(Array.isArray(res.body.data)).toBe(true);
 
-        console.log(
-            'Validated Punch Details:',
-            JSON.stringify(res.body.data, null, 2)
-        );
     });   
 });

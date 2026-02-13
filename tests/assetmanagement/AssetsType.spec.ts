@@ -36,10 +36,6 @@ test.describe('Asset Management API - Asset Summary', () => {
       );
     });
 
-    console.log(
-      'Validated Asset Summary:',
-      JSON.stringify(res.body.data, null, 2)
-    );
   });
 
 
@@ -64,7 +60,7 @@ test.describe('Asset Management API - Asset Summary', () => {
     // Structure validation
     expect(res.body).toHaveProperty('data');
     expect(res.body.data).toBeNull();
-    console.log('Asset Summary for Employee User:', JSON.stringify(res.body, null, 2));  
+ 
 
   });
 

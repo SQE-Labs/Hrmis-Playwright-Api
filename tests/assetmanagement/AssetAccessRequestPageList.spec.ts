@@ -27,10 +27,6 @@ test.describe('Asset Management API - Asset Assigned To User', () => {
 
         });
 
-        console.log(
-            'Validated Asset Access Request Page List:',
-            JSON.stringify(res.body.data.content, null, 2)
-        );
 
     });
 
@@ -57,10 +53,6 @@ test.describe('Asset Management API - Asset Assigned To User', () => {
             expect(typeof asset.createdBy).toBe('number');
         });
 
-        console.log(
-            'Validated Asset Access Request Page List:',
-            JSON.stringify(res.body.data.content, null, 2)
-        );
     });
 
 });

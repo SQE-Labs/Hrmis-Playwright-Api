@@ -31,10 +31,6 @@ test.describe('Dashboard resources', () => {
             expect(typeof userAccess.assigned).toBe('boolean');
         });
 
-        console.log(
-            "User Access response body:",
-            JSON.stringify(response.body, null, 2)
-        );
     });
 
     test('IM-02_ Verify the user is able to access dashboard resources with employee role', async ({ apiAsEmployee }) => {
@@ -66,9 +62,5 @@ test.describe('Dashboard resources', () => {
             expect(typeof userAccess.assigned).toBe('boolean');
         });
 
-        console.log(
-            "User Access response body for employee:",
-            JSON.stringify(response.body, null, 2)
-        );
     });
 });
