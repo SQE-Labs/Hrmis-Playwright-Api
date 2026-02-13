@@ -1,5 +1,8 @@
 export const ENDPOINTS = {
     POST_SIGNIN: '/HRMBackendTest/api/auth/signin',
+    GET_PROJECTS_BY_EMPLOYEE: '/HRMBackendTest/project/projects-by-employee/271',
+    GET_USERS_ACCESS: '/HRMBackendTest/menu/v1/users',
+    GET_PUNCH_DETAILS: '/HRMBackendTest/punch',
     GET_EMPLOYEES: '/HRMBackendTest/user',
     GET_ASSET_TYPE_BY_ID: '/HRMBackendTest/assest/total',
     GET_ASSET_LIST_SUMMARY: '/HRMBackendTest/assest/list',
@@ -10,6 +13,8 @@ export const ENDPOINTS = {
     GET_ASSET_ACCESS_REQUEST_PAGE_LIST: '/HRMBackendTest/api/access/requests/employee/271',
     GET_ASSET_ACCESS_REQUEST_PAGE_DL_LIST:'/HRMBackendTest/leave/ood/dl/list',
     GET_ASSET_ACCESS_REQUEST_STATUS_APPROVED: '/HRMBackendTest/api/access/types',
+    GET_EMPLOYEES_DATA_V2: '/HRMBackendTest/api/access/accessesEmployeesDataV2',
+    GET_ACCESS_REQUEST_TYPE_STATUS: '/HRMBackendTest/api/access/types',
     GET_STATUS_CATEGORY_PENDING: '/HRMBackendTest/assest/category',
     GET_STATUS_CATEGORY_ALL: '/HRMBackendTest/assest/category',
     GET_ACTIVE_PROJECTS:'/HRMBackendTest/project/getActiveProjects',
