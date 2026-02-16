@@ -56,4 +56,11 @@ export class DashboardService {
         return response;
         }
 
+    async getMasterLeave(options?: RequestOptions) {
+
+        let response = await this.request.get(ENDPOINTS.GET_MASTER_LEAVE, options);
+        console.log("Master Leave response:", response);
+        return response;
+    }
+
 };
