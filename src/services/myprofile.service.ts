@@ -29,7 +29,12 @@ export class MyProfileService {
             );
             return response;
         }
+        
+    async getDocuments(options?: RequestOptions) {
 
-
+        let response = await this.request.get(ENDPOINTS.GET_DOCUMENTS, options);
+        console.log("Documents Response:", response);
+        return response;
+    }
 
 }
