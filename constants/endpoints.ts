@@ -3,6 +3,7 @@ export const ENDPOINTS = {
     GET_PROJECTS_BY_EMPLOYEE: '/HRMBackendTest/project/projects-by-employee/271',
     GET_USERS_ACCESS: '/HRMBackendTest/menu/v1/users',
     GET_PUNCH_DETAILS: '/HRMBackendTest/punch',
+    GET_TODAYS_DATE: '/HRMBackendTest/leave/emp/today',
     GET_EMPLOYEES: '/HRMBackendTest/user',
     GET_ASSET_TYPE_BY_ID: '/HRMBackendTest/assest/total',
     GET_ASSET_LIST_SUMMARY: '/HRMBackendTest/assest/list',
