@@ -65,20 +65,20 @@
   },
   "suites": [
     {
-      "title": "dashboard\\MasterLeave.spec.ts",
-      "file": "dashboard/MasterLeave.spec.ts",
+      "title": "myprofile\\MyAssetAssigned.spec.ts",
+      "file": "myprofile/MyAssetAssigned.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Master Leave - Dashboard",
-          "file": "dashboard/MasterLeave.spec.ts",
+          "title": "My Profile - My Asset Assigned",
+          "file": "myprofile/MyAssetAssigned.spec.ts",
           "line": 3,
           "column": 6,
           "specs": [
             {
-              "title": "IM-06 - Verify that the master leave is accessible and returns the correct information",
+              "title": "IM-07 - Verify that the My Asset Assigned endpoint is working for Super Admin role",
               "ok": true,
               "tags": [],
               "tests": [
@@ -90,19 +90,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 13,
+                      "workerIndex": 17,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3220,
+                      "duration": 2307,
                       "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Master Leave response: {\n  status: \u001b[33m200\u001b[39m,\n  body: {\n    data: {\n      createdBy: \u001b[33m0\u001b[39m,\n      creationDate: \u001b[32m'2024-09-21T11:48:24.623+00:00'\u001b[39m,\n      lastModifiedBy: \u001b[33m0\u001b[39m,\n      lastModifiedDate: \u001b[32m'2025-01-01T09:00:00.165+00:00'\u001b[39m,\n      id: \u001b[33m775\u001b[39m,\n      employeeId: \u001b[33m271\u001b[39m,\n      quartelyLeave: \u001b[33m0\u001b[39m,\n      privilegeLeave: \u001b[33m1\u001b[39m,\n      workFromHomeLeave: \u001b[33m2\u001b[39m,\n      paternityLeave: \u001b[33m0\u001b[39m,\n      maternityLeave: \u001b[33m0\u001b[39m,\n      workFromHomeLeaveForQuarter: \u001b[33m8\u001b[39m,\n      shortLeave: \u001b[33m2\u001b[39m,\n      halfDayLeave: \u001b[33m0\u001b[39m,\n      halfYearlyLeave: \u001b[33m1\u001b[39m,\n      periodicLeave: \u001b[33m1\u001b[39m,\n      unpaidLeaveBalanceMonth: \u001b[33m0\u001b[39m,\n      unpaidLeaveBalanceYear: \u001b[33m0\u001b[39m,\n      negativeBalance: \u001b[33m0\u001b[39m,\n      casualLeave: \u001b[33m1\u001b[39m,\n      version: \u001b[33m19\u001b[39m\n    }\n  },\n  headers: {\n    server: \u001b[32m'nginx/1.18.0 (Ubuntu)'\u001b[39m,\n    date: \u001b[32m'Mon, 16 Feb 2026 07:50:49 GMT'\u001b[39m,\n    \u001b[32m'content-type'\u001b[39m: \u001b[32m'application/json;charset=UTF-8'\u001b[39m,\n    \u001b[32m'transfer-encoding'\u001b[39m: \u001b[32m'chunked'\u001b[39m,\n    connection: \u001b[32m'keep-alive'\u001b[39m,\n    vary: \u001b[32m'Origin, Access-Control-Request-Method, Access-Control-Request-Headers'\u001b[39m,\n    \u001b[32m'x-content-type-options'\u001b[39m: \u001b[32m'nosniff'\u001b[39m,\n    \u001b[32m'x-xss-protection'\u001b[39m: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'cache-control'\u001b[39m: \u001b[32m'no-cache, no-store, max-age=0, must-revalidate'\u001b[39m,\n    pragma: \u001b[32m'no-cache'\u001b[39m,\n    expires: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'x-frame-options'\u001b[39m: \u001b[32m'DENY'\u001b[39m\n  },\n  raw: APIResponse: 200 \n    Server: nginx/1.18.0 (Ubuntu)\n    Date: Mon, 16 Feb 2026 07:50:49 GMT\n    Content-Type: application/json;charset=UTF-8\n    Transfer-Encoding: chunked\n    Connection: keep-alive\n    Vary: Origin\n    Vary: Access-Control-Request-Method\n    Vary: Access-Control-Request-Headers\n    X-Content-Type-Options: nosniff\n    X-XSS-Protection: 0\n    Cache-Control: no-cache, no-store, max-age=0, must-revalidate\n    Pragma: no-cache\n    Expires: 0\n    X-Frame-Options: DENY\n}\n"
-                        }
-                      ],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-16T07:50:50.985Z",
+                      "startTime": "2026-02-16T10:29:47.834Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -110,13 +106,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "e6da2481ac9f8ca35b68-3e719247262d1ff186e8",
-              "file": "dashboard/MasterLeave.spec.ts",
+              "id": "0c52182afd4004fae5e4-9a1480e169c632b62c46",
+              "file": "myprofile/MyAssetAssigned.spec.ts",
               "line": 5,
-              "column": 7
+              "column": 9
             },
             {
-              "title": "IM-06 - Verify that the master leave enpoint is working for employee role",
+              "title": "IM-08 - Verify that the My Asset Assigned endpoint is working for Employee role",
               "ok": true,
               "tags": [],
               "tests": [
@@ -128,19 +124,15 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 13,
+                      "workerIndex": 17,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 800,
+                      "duration": 775,
                       "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Master Leave response: {\n  status: \u001b[33m200\u001b[39m,\n  body: {\n    data: {\n      createdBy: \u001b[33m0\u001b[39m,\n      creationDate: \u001b[32m'2024-09-21T11:48:24.623+00:00'\u001b[39m,\n      lastModifiedBy: \u001b[33m0\u001b[39m,\n      lastModifiedDate: \u001b[32m'2025-01-01T09:00:00.165+00:00'\u001b[39m,\n      id: \u001b[33m775\u001b[39m,\n      employeeId: \u001b[33m271\u001b[39m,\n      quartelyLeave: \u001b[33m0\u001b[39m,\n      privilegeLeave: \u001b[33m1\u001b[39m,\n      workFromHomeLeave: \u001b[33m2\u001b[39m,\n      paternityLeave: \u001b[33m0\u001b[39m,\n      maternityLeave: \u001b[33m0\u001b[39m,\n      workFromHomeLeaveForQuarter: \u001b[33m8\u001b[39m,\n      shortLeave: \u001b[33m2\u001b[39m,\n      halfDayLeave: \u001b[33m0\u001b[39m,\n      halfYearlyLeave: \u001b[33m1\u001b[39m,\n      periodicLeave: \u001b[33m1\u001b[39m,\n      unpaidLeaveBalanceMonth: \u001b[33m0\u001b[39m,\n      unpaidLeaveBalanceYear: \u001b[33m0\u001b[39m,\n      negativeBalance: \u001b[33m0\u001b[39m,\n      casualLeave: \u001b[33m1\u001b[39m,\n      version: \u001b[33m19\u001b[39m\n    }\n  },\n  headers: {\n    server: \u001b[32m'nginx/1.18.0 (Ubuntu)'\u001b[39m,\n    date: \u001b[32m'Mon, 16 Feb 2026 07:50:50 GMT'\u001b[39m,\n    \u001b[32m'content-type'\u001b[39m: \u001b[32m'application/json;charset=UTF-8'\u001b[39m,\n    \u001b[32m'transfer-encoding'\u001b[39m: \u001b[32m'chunked'\u001b[39m,\n    connection: \u001b[32m'keep-alive'\u001b[39m,\n    vary: \u001b[32m'Origin, Access-Control-Request-Method, Access-Control-Request-Headers'\u001b[39m,\n    \u001b[32m'x-content-type-options'\u001b[39m: \u001b[32m'nosniff'\u001b[39m,\n    \u001b[32m'x-xss-protection'\u001b[39m: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'cache-control'\u001b[39m: \u001b[32m'no-cache, no-store, max-age=0, must-revalidate'\u001b[39m,\n    pragma: \u001b[32m'no-cache'\u001b[39m,\n    expires: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'x-frame-options'\u001b[39m: \u001b[32m'DENY'\u001b[39m\n  },\n  raw: APIResponse: 200 \n    Server: nginx/1.18.0 (Ubuntu)\n    Date: Mon, 16 Feb 2026 07:50:50 GMT\n    Content-Type: application/json;charset=UTF-8\n    Transfer-Encoding: chunked\n    Connection: keep-alive\n    Vary: Origin\n    Vary: Access-Control-Request-Method\n    Vary: Access-Control-Request-Headers\n    X-Content-Type-Options: nosniff\n    X-XSS-Protection: 0\n    Cache-Control: no-cache, no-store, max-age=0, must-revalidate\n    Pragma: no-cache\n    Expires: 0\n    X-Frame-Options: DENY\n}\n"
-                        }
-                      ],
+                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-16T07:50:54.240Z",
+                      "startTime": "2026-02-16T10:29:50.181Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -148,9 +140,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "e6da2481ac9f8ca35b68-8856f8073b2ed0c946ae",
-              "file": "dashboard/MasterLeave.spec.ts",
-              "line": 44,
+              "id": "0c52182afd4004fae5e4-fb1ea6ea5ad0d3899c61",
+              "file": "myprofile/MyAssetAssigned.spec.ts",
+              "line": 55,
               "column": 9
             }
           ]
@@ -160,8 +152,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-16T07:50:47.975Z",
-    "duration": 7137.024000000209,
+    "startTime": "2026-02-16T10:29:44.682Z",
+    "duration": 6447.444000001997,
     "expected": 2,
     "skipped": 0,
     "unexpected": 0,
