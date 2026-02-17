@@ -7,6 +7,7 @@ export const ENDPOINTS = {
     GET_MASTER_LEAVE: '/HRMBackendTest/leave/masterleave/271',
     GET_MY_ASSET_ASSIGNED: '/HRMBackendTest/assest/my',
     GET_DOCUMENTS: '/HRMBackendTest/document',
+    GET_STATUS_LIST: '/HRMBackendTest/document/v1/list/status',
     GET_EMPLOYEES: '/HRMBackendTest/user',
     GET_ASSET_TYPE_BY_ID: '/HRMBackendTest/assest/total',
     GET_ASSET_LIST_SUMMARY: '/HRMBackendTest/assest/list',

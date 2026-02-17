@@ -37,4 +37,11 @@ export class MyProfileService {
         return response;
     }
 
+    async getStatusList(options?: RequestOptions) {
+
+        let response = await this.request.get(ENDPOINTS.GET_STATUS_LIST, options);
+        console.log("Document Status List:", response);
+        return response;
+    }
+
 }
