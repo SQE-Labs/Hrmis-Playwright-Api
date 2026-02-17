@@ -65,20 +65,20 @@
   },
   "suites": [
     {
-      "title": "myprofile\\DocumentStatusList.spec.ts",
-      "file": "myprofile/DocumentStatusList.spec.ts",
+      "title": "myprofile\\Appraisal.spec.ts",
+      "file": "myprofile/Appraisal.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Document Status List - My Profile",
-          "file": "myprofile/DocumentStatusList.spec.ts",
+          "title": "Appraisal- My Profile",
+          "file": "myprofile/Appraisal.spec.ts",
           "line": 3,
           "column": 6,
           "specs": [
             {
-              "title": "IM-09 - Verify the status of the documents is displayed corrctly using Super Admin role",
+              "title": "IM-11 - Verify the appraisal documents is displayed corrctly using Super Admin role",
               "ok": true,
               "tags": [],
               "tests": [
@@ -90,19 +90,19 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 7,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1701,
+                      "duration": 2332,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "Document Status List: {\n  status: \u001b[33m200\u001b[39m,\n  body: {\n    data: [\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m\n    ],\n    message: \u001b[32m'Success'\u001b[39m\n  },\n  headers: {\n    server: \u001b[32m'nginx/1.18.0 (Ubuntu)'\u001b[39m,\n    date: \u001b[32m'Tue, 17 Feb 2026 04:54:38 GMT'\u001b[39m,\n    \u001b[32m'content-type'\u001b[39m: \u001b[32m'application/json;charset=UTF-8'\u001b[39m,\n    \u001b[32m'transfer-encoding'\u001b[39m: \u001b[32m'chunked'\u001b[39m,\n    connection: \u001b[32m'keep-alive'\u001b[39m,\n    vary: \u001b[32m'Origin, Access-Control-Request-Method, Access-Control-Request-Headers'\u001b[39m,\n    \u001b[32m'x-content-type-options'\u001b[39m: \u001b[32m'nosniff'\u001b[39m,\n    \u001b[32m'x-xss-protection'\u001b[39m: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'cache-control'\u001b[39m: \u001b[32m'no-cache, no-store, max-age=0, must-revalidate'\u001b[39m,\n    pragma: \u001b[32m'no-cache'\u001b[39m,\n    expires: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'x-frame-options'\u001b[39m: \u001b[32m'DENY'\u001b[39m\n  },\n  raw: APIResponse: 200 \n    Server: nginx/1.18.0 (Ubuntu)\n    Date: Tue, 17 Feb 2026 04:54:38 GMT\n    Content-Type: application/json;charset=UTF-8\n    Transfer-Encoding: chunked\n    Connection: keep-alive\n    Vary: Origin\n    Vary: Access-Control-Request-Method\n    Vary: Access-Control-Request-Headers\n    X-Content-Type-Options: nosniff\n    X-XSS-Protection: 0\n    Cache-Control: no-cache, no-store, max-age=0, must-revalidate\n    Pragma: no-cache\n    Expires: 0\n    X-Frame-Options: DENY\n}\n"
+                          "text": "Appraisal Documents List: {\n  status: \u001b[33m200\u001b[39m,\n  body: {\n    data: [\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m\n    ],\n    message: \u001b[32m'Success'\u001b[39m\n  },\n  headers: {\n    server: \u001b[32m'nginx/1.18.0 (Ubuntu)'\u001b[39m,\n    date: \u001b[32m'Tue, 17 Feb 2026 05:44:05 GMT'\u001b[39m,\n    \u001b[32m'content-type'\u001b[39m: \u001b[32m'application/json;charset=UTF-8'\u001b[39m,\n    \u001b[32m'transfer-encoding'\u001b[39m: \u001b[32m'chunked'\u001b[39m,\n    connection: \u001b[32m'keep-alive'\u001b[39m,\n    vary: \u001b[32m'Origin, Access-Control-Request-Method, Access-Control-Request-Headers'\u001b[39m,\n    \u001b[32m'x-content-type-options'\u001b[39m: \u001b[32m'nosniff'\u001b[39m,\n    \u001b[32m'x-xss-protection'\u001b[39m: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'cache-control'\u001b[39m: \u001b[32m'no-cache, no-store, max-age=0, must-revalidate'\u001b[39m,\n    pragma: \u001b[32m'no-cache'\u001b[39m,\n    expires: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'x-frame-options'\u001b[39m: \u001b[32m'DENY'\u001b[39m\n  },\n  raw: APIResponse: 200 \n    Server: nginx/1.18.0 (Ubuntu)\n    Date: Tue, 17 Feb 2026 05:44:05 GMT\n    Content-Type: application/json;charset=UTF-8\n    Transfer-Encoding: chunked\n    Connection: keep-alive\n    Vary: Origin\n    Vary: Access-Control-Request-Method\n    Vary: Access-Control-Request-Headers\n    X-Content-Type-Options: nosniff\n    X-XSS-Protection: 0\n    Cache-Control: no-cache, no-store, max-age=0, must-revalidate\n    Pragma: no-cache\n    Expires: 0\n    X-Frame-Options: DENY\n}\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-17T04:54:42.273Z",
+                      "startTime": "2026-02-17T05:44:08.975Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -110,13 +110,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "846945b6ea0ac7f45132-a5a1d676c38c236d9619",
-              "file": "myprofile/DocumentStatusList.spec.ts",
+              "id": "451b18661cb16acb338f-ee6b5f2b7c9d1b654303",
+              "file": "myprofile/Appraisal.spec.ts",
               "line": 5,
               "column": 9
             },
             {
-              "title": "IM-09 - Verify the status of the documents is displayed corrctly using Employee Role",
+              "title": "IM-11 - Verify the appraisal documents is displayed corrctly using Employee Role",
               "ok": true,
               "tags": [],
               "tests": [
@@ -128,19 +128,19 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 7,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 877,
+                      "duration": 934,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "Document Status List: {\n  status: \u001b[33m200\u001b[39m,\n  body: {\n    data: [\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m\n    ],\n    message: \u001b[32m'Success'\u001b[39m\n  },\n  headers: {\n    server: \u001b[32m'nginx/1.18.0 (Ubuntu)'\u001b[39m,\n    date: \u001b[32m'Tue, 17 Feb 2026 04:54:39 GMT'\u001b[39m,\n    \u001b[32m'content-type'\u001b[39m: \u001b[32m'application/json;charset=UTF-8'\u001b[39m,\n    \u001b[32m'transfer-encoding'\u001b[39m: \u001b[32m'chunked'\u001b[39m,\n    connection: \u001b[32m'keep-alive'\u001b[39m,\n    vary: \u001b[32m'Origin, Access-Control-Request-Method, Access-Control-Request-Headers'\u001b[39m,\n    \u001b[32m'x-content-type-options'\u001b[39m: \u001b[32m'nosniff'\u001b[39m,\n    \u001b[32m'x-xss-protection'\u001b[39m: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'cache-control'\u001b[39m: \u001b[32m'no-cache, no-store, max-age=0, must-revalidate'\u001b[39m,\n    pragma: \u001b[32m'no-cache'\u001b[39m,\n    expires: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'x-frame-options'\u001b[39m: \u001b[32m'DENY'\u001b[39m\n  },\n  raw: APIResponse: 200 \n    Server: nginx/1.18.0 (Ubuntu)\n    Date: Tue, 17 Feb 2026 04:54:39 GMT\n    Content-Type: application/json;charset=UTF-8\n    Transfer-Encoding: chunked\n    Connection: keep-alive\n    Vary: Origin\n    Vary: Access-Control-Request-Method\n    Vary: Access-Control-Request-Headers\n    X-Content-Type-Options: nosniff\n    X-XSS-Protection: 0\n    Cache-Control: no-cache, no-store, max-age=0, must-revalidate\n    Pragma: no-cache\n    Expires: 0\n    X-Frame-Options: DENY\n}\n"
+                          "text": "Appraisal Documents List: {\n  status: \u001b[33m200\u001b[39m,\n  body: { data: [ \u001b[36m[Object]\u001b[39m ], message: \u001b[32m'Success'\u001b[39m },\n  headers: {\n    server: \u001b[32m'nginx/1.18.0 (Ubuntu)'\u001b[39m,\n    date: \u001b[32m'Tue, 17 Feb 2026 05:44:07 GMT'\u001b[39m,\n    \u001b[32m'content-type'\u001b[39m: \u001b[32m'application/json;charset=UTF-8'\u001b[39m,\n    \u001b[32m'transfer-encoding'\u001b[39m: \u001b[32m'chunked'\u001b[39m,\n    connection: \u001b[32m'keep-alive'\u001b[39m,\n    vary: \u001b[32m'Origin, Access-Control-Request-Method, Access-Control-Request-Headers'\u001b[39m,\n    \u001b[32m'x-content-type-options'\u001b[39m: \u001b[32m'nosniff'\u001b[39m,\n    \u001b[32m'x-xss-protection'\u001b[39m: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'cache-control'\u001b[39m: \u001b[32m'no-cache, no-store, max-age=0, must-revalidate'\u001b[39m,\n    pragma: \u001b[32m'no-cache'\u001b[39m,\n    expires: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'x-frame-options'\u001b[39m: \u001b[32m'DENY'\u001b[39m\n  },\n  raw: APIResponse: 200 \n    Server: nginx/1.18.0 (Ubuntu)\n    Date: Tue, 17 Feb 2026 05:44:07 GMT\n    Content-Type: application/json;charset=UTF-8\n    Transfer-Encoding: chunked\n    Connection: keep-alive\n    Vary: Origin\n    Vary: Access-Control-Request-Method\n    Vary: Access-Control-Request-Headers\n    X-Content-Type-Options: nosniff\n    X-XSS-Protection: 0\n    Cache-Control: no-cache, no-store, max-age=0, must-revalidate\n    Pragma: no-cache\n    Expires: 0\n    X-Frame-Options: DENY\n}\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-17T04:54:43.997Z",
+                      "startTime": "2026-02-17T05:44:11.343Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -148,9 +148,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "846945b6ea0ac7f45132-8693fb37804c44b34e2f",
-              "file": "myprofile/DocumentStatusList.spec.ts",
-              "line": 43,
+              "id": "451b18661cb16acb338f-3ba13848b2ab7bb54f73",
+              "file": "myprofile/Appraisal.spec.ts",
+              "line": 40,
               "column": 9
             }
           ]
@@ -160,8 +160,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-17T04:54:40.071Z",
-    "duration": 4876.724000000395,
+    "startTime": "2026-02-17T05:44:05.999Z",
+    "duration": 6352.43200000003,
     "expected": 2,
     "skipped": 0,
     "unexpected": 0,

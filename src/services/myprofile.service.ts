@@ -44,4 +44,11 @@ export class MyProfileService {
         return response;
     }
 
+    async getAppraisal(options?: RequestOptions) {
+
+        let response = await this.request.get(ENDPOINTS.GET_APPRAISAL, options);
+        console.log("Appraisal Documents List:", response);
+        return response;
+    }
+
 }
