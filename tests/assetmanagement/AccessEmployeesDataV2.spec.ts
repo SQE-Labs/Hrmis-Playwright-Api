@@ -34,10 +34,6 @@ test.describe('Access Employees Data V2', () => {
 
         });
 
-        console.log(
-            'Validated Employees Data V2:',
-            JSON.stringify(res.body.data, null, 2)
-        );
     });
 
     test("Verify that the user cannot access the employee data with invalid credentials", async ({ apiAsEmployee }) => {
@@ -56,10 +52,7 @@ test.describe('Access Employees Data V2', () => {
         // Structure validation
         expect(res.body).toHaveProperty('data');
         expect(res.body.data).toBeNull();
-        console.log(
-            'Validated Employees Data V2 with invalid credentials:',
-            JSON.stringify(res.body, null, 2)
-        );
+        
     });
 
 });

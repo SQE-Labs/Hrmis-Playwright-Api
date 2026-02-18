@@ -32,4 +32,35 @@ export class DashboardService {
         console.log("Punch Details response:", response);
         return response;
     }
+
+    async getTodayDate(
+        params: {
+            date?: string;
+        } = {},
+        options?: RequestOptions
+        ) {
+        // Generate today's date in YYYY-MM-DD format
+        const todayDate = new Date().toISOString().split('T')[0];
+
+        const response = await this.request.get(
+            ENDPOINTS.GET_TODAYS_DATE,
+            {
+            ...options,
+            params: {
+                date: params.date ?? todayDate
+            }
+            }
+        );
+
+        console.log('Today Date Response:', response);
+        return response;
+        }
+
+    async getMasterLeave(options?: RequestOptions) {
+
+        let response = await this.request.get(ENDPOINTS.GET_MASTER_LEAVE, options);
+        console.log("Master Leave response:", response);
+        return response;
+    }
+
 };

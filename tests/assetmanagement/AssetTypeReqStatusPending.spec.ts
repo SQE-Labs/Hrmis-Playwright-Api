@@ -12,10 +12,6 @@ test.describe('Get Asset type request status pending - API', () => {
         expect(res.body).toHaveProperty('data');
         expect(Array.isArray(res.body.data)).toBe(true);
 
-        console.log(
-            'Validated Asset Type Request Status Pending:',
-            JSON.stringify(res.body.data, null, 2)
-        );
 
     });
 
@@ -32,9 +28,5 @@ test.describe('Get Asset type request status pending - API', () => {
         //Message Validation
         expect(res.body.message).toBe('You are not authorized to access this resource.');
 
-        console.log(
-            'Asset Type Request Status Pending Access Denied Message:',
-            JSON.stringify(res.body.message, null, 2)
-        );
     });
 });

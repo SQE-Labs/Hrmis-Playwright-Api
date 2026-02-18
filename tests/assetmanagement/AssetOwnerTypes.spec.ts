@@ -20,10 +20,6 @@ test.describe('Get Asset Owner Types API', () => {
         expect(Array.isArray(res.body.data.ownerTypes)).toBe(true);
         expect(res.body.data.ownerTypes.length).toBeGreaterThan(0);
 
-        console.log(
-            'Validated Asset Owner Types List:',
-            JSON.stringify(res.body.data, null, 2)
-        );
     });
 
     test('Verify Get Asset Owner Types API returns owner types for another valid user', async ({apiAsEmployee}) => {
@@ -45,9 +41,5 @@ test.describe('Get Asset Owner Types API', () => {
         expect(Array.isArray(res.body.data.ownerTypes)).toBe(true);
         expect(res.body.data.ownerTypes.length).toBeGreaterThan(0);
 
-        console.log(
-            'Validated Asset Owner Types List:',
-            JSON.stringify(res.body.data, null, 2)
-        );
     });
 });

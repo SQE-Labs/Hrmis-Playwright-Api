@@ -34,10 +34,7 @@ test.describe('Asset Management API - Asset Assigned To User', () => {
             expect(typeof asset.description).toBe('string');
         });
 
-        console.log(
-            'Validated Asset Access Request Status Approved List:',
-            JSON.stringify(res.body.data.accessTypes, null, 2)
-        );
+        
     });
 
     test('Verify asset access request status approved is returned correctly for another valid user', async ({apiAsEmployee}) => {
@@ -71,10 +68,7 @@ test.describe('Asset Management API - Asset Assigned To User', () => {
             expect(typeof asset.description).toBe('string');
         });
 
-        console.log(
-            'Validated Asset Access Request Status Approved List:',
-            JSON.stringify(res.body.data.accessTypes, null, 2)
-        );
+        
     });
 
 });

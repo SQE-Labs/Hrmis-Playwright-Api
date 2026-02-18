@@ -31,10 +31,6 @@ test.describe('Projects by Employee Dashboard', () => {
 
         });
 
-        console.log(
-            'Validated Projects by Employee Dashboard:',
-            JSON.stringify(response.body.data, null, 2)
-        );
     });
 
     test('Verify projects should return with the employee ', async ({apiAsEmployee}) => {
@@ -65,9 +61,5 @@ test.describe('Projects by Employee Dashboard', () => {
             expect(typeof project.projectName).toBe('string');
         });
 
-        console.log(
-            'Validated Projects by Employee for Employee Role:',
-            JSON.stringify(response.body.data, null, 2)
-        );
     });
 });

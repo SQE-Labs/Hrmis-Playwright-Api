@@ -78,47 +78,6 @@
           "column": 6,
           "specs": [
             {
-              "title": "IM-03: Verify that the punch details are displayed correctly for a specific punch",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1961,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Punch Details response: {\n  status: \u001b[33m200\u001b[39m,\n  body: {\n    data: [\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m\n    ]\n  },\n  headers: {\n    server: \u001b[32m'nginx/1.18.0 (Ubuntu)'\u001b[39m,\n    date: \u001b[32m'Fri, 13 Feb 2026 05:48:40 GMT'\u001b[39m,\n    \u001b[32m'content-type'\u001b[39m: \u001b[32m'application/json;charset=UTF-8'\u001b[39m,\n    \u001b[32m'transfer-encoding'\u001b[39m: \u001b[32m'chunked'\u001b[39m,\n    connection: \u001b[32m'keep-alive'\u001b[39m,\n    vary: \u001b[32m'Origin, Access-Control-Request-Method, Access-Control-Request-Headers'\u001b[39m,\n    \u001b[32m'x-content-type-options'\u001b[39m: \u001b[32m'nosniff'\u001b[39m,\n    \u001b[32m'x-xss-protection'\u001b[39m: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'cache-control'\u001b[39m: \u001b[32m'no-cache, no-store, max-age=0, must-revalidate'\u001b[39m,\n    pragma: \u001b[32m'no-cache'\u001b[39m,\n    expires: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'x-frame-options'\u001b[39m: \u001b[32m'DENY'\u001b[39m\n  },\n  raw: APIResponse: 200 \n    Server: nginx/1.18.0 (Ubuntu)\n    Date: Fri, 13 Feb 2026 05:48:40 GMT\n    Content-Type: application/json;charset=UTF-8\n    Transfer-Encoding: chunked\n    Connection: keep-alive\n    Vary: Origin\n    Vary: Access-Control-Request-Method\n    Vary: Access-Control-Request-Headers\n    X-Content-Type-Options: nosniff\n    X-XSS-Protection: 0\n    Cache-Control: no-cache, no-store, max-age=0, must-revalidate\n    Pragma: no-cache\n    Expires: 0\n    X-Frame-Options: DENY\n}\n"
-                        },
-                        {
-                          "text": "Validated Punch Details: [\n  {\n    \"date\": \"Wed, Feb 11\",\n    \"punch_in_time\": \"12:15 PM\",\n    \"punch_in_out\": \"07:52 PM\",\n    \"total_hour\": \"07:37\",\n    \"is_positive_hour\": false,\n    \"leave_type\": null,\n    \"punch_in_time_org\": null,\n    \"punch_in_out_org\": null,\n    \"is_compiled\": false\n  },\n  {\n    \"date\": \"Tue, Feb 10\",\n    \"punch_in_time\": \"12:23 PM\",\n    \"punch_in_out\": \"08:49 PM\",\n    \"total_hour\": \"08:26\",\n    \"is_positive_hour\": true,\n    \"leave_type\": null,\n    \"punch_in_time_org\": null,\n    \"punch_in_out_org\": null,\n    \"is_compiled\": false\n  },\n  {\n    \"date\": \"Mon, Feb 09\",\n    \"punch_in_time\": \"12:50 PM\",\n    \"punch_in_out\": \"07:59 PM\",\n    \"total_hour\": \"07:08\",\n    \"is_positive_hour\": false,\n    \"leave_type\": null,\n    \"punch_in_time_org\": null,\n    \"punch_in_out_org\": null,\n    \"is_compiled\": false\n  },\n  {\n    \"date\": \"Sun, Feb 08\",\n    \"punch_in_time\": \"NA\",\n    \"punch_in_out\": \"NA\",\n    \"total_hour\": \"0\",\n    \"is_positive_hour\": false,\n    \"leave_type\": null,\n    \"punch_in_time_org\": null,\n    \"punch_in_out_org\": null,\n    \"is_compiled\": false\n  },\n  {\n    \"date\": \"Sat, Feb 07\",\n    \"punch_in_time\": \"NA\",\n    \"punch_in_out\": \"NA\",\n    \"total_hour\": \"0\",\n    \"is_positive_hour\": false,\n    \"leave_type\": null,\n    \"punch_in_time_org\": null,\n    \"punch_in_out_org\": null,\n    \"is_compiled\": false\n  },\n  {\n    \"date\": \"Fri, Feb 06\",\n    \"punch_in_time\": \"NA\",\n    \"punch_in_out\": \"NA\",\n    \"total_hour\": \"0\",\n    \"is_positive_hour\": false,\n    \"leave_type\": null,\n    \"punch_in_time_org\": null,\n    \"punch_in_out_org\": null,\n    \"is_compiled\": false\n  },\n  {\n    \"date\": \"Thu, Feb 05\",\n    \"punch_in_time\": \"11:48 AM\",\n    \"punch_in_out\": \"08:28 PM\",\n    \"total_hour\": \"08:39\",\n    \"is_positive_hour\": true,\n    \"leave_type\": null,\n    \"punch_in_time_org\": null,\n    \"punch_in_out_org\": null,\n    \"is_compiled\": false\n  }\n]\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-13T05:48:40.328Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "e7b4e11ea97aafad8c66-71122e29dc4667b0b12b",
-              "file": "dashboard/PunchDetails.spec.ts",
-              "line": 5,
-              "column": 9
-            },
-            {
               "title": "IM-03: Verify that the punch details are displayed correctly for a specific employee",
               "ok": true,
               "tags": [],
@@ -131,22 +90,19 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 3,
+                      "workerIndex": 10,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 679,
+                      "duration": 1401,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "Punch Details response: {\n  status: \u001b[33m200\u001b[39m,\n  body: { data: [] },\n  headers: {\n    server: \u001b[32m'nginx/1.18.0 (Ubuntu)'\u001b[39m,\n    date: \u001b[32m'Fri, 13 Feb 2026 05:48:42 GMT'\u001b[39m,\n    \u001b[32m'content-type'\u001b[39m: \u001b[32m'application/json;charset=UTF-8'\u001b[39m,\n    \u001b[32m'transfer-encoding'\u001b[39m: \u001b[32m'chunked'\u001b[39m,\n    connection: \u001b[32m'keep-alive'\u001b[39m,\n    vary: \u001b[32m'Origin, Access-Control-Request-Method, Access-Control-Request-Headers'\u001b[39m,\n    \u001b[32m'x-content-type-options'\u001b[39m: \u001b[32m'nosniff'\u001b[39m,\n    \u001b[32m'x-xss-protection'\u001b[39m: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'cache-control'\u001b[39m: \u001b[32m'no-cache, no-store, max-age=0, must-revalidate'\u001b[39m,\n    pragma: \u001b[32m'no-cache'\u001b[39m,\n    expires: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'x-frame-options'\u001b[39m: \u001b[32m'DENY'\u001b[39m\n  },\n  raw: APIResponse: 200 \n    Server: nginx/1.18.0 (Ubuntu)\n    Date: Fri, 13 Feb 2026 05:48:42 GMT\n    Content-Type: application/json;charset=UTF-8\n    Transfer-Encoding: chunked\n    Connection: keep-alive\n    Vary: Origin\n    Vary: Access-Control-Request-Method\n    Vary: Access-Control-Request-Headers\n    X-Content-Type-Options: nosniff\n    X-XSS-Protection: 0\n    Cache-Control: no-cache, no-store, max-age=0, must-revalidate\n    Pragma: no-cache\n    Expires: 0\n    X-Frame-Options: DENY\n}\n"
-                        },
-                        {
-                          "text": "Validated Punch Details: []\n"
+                          "text": "Punch Details response: {\n  status: \u001b[33m200\u001b[39m,\n  body: { data: [] },\n  headers: {\n    server: \u001b[32m'nginx/1.18.0 (Ubuntu)'\u001b[39m,\n    date: \u001b[32m'Wed, 18 Feb 2026 06:33:43 GMT'\u001b[39m,\n    \u001b[32m'content-type'\u001b[39m: \u001b[32m'application/json;charset=UTF-8'\u001b[39m,\n    \u001b[32m'transfer-encoding'\u001b[39m: \u001b[32m'chunked'\u001b[39m,\n    connection: \u001b[32m'keep-alive'\u001b[39m,\n    vary: \u001b[32m'Origin, Access-Control-Request-Method, Access-Control-Request-Headers'\u001b[39m,\n    \u001b[32m'x-content-type-options'\u001b[39m: \u001b[32m'nosniff'\u001b[39m,\n    \u001b[32m'x-xss-protection'\u001b[39m: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'cache-control'\u001b[39m: \u001b[32m'no-cache, no-store, max-age=0, must-revalidate'\u001b[39m,\n    pragma: \u001b[32m'no-cache'\u001b[39m,\n    expires: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'x-frame-options'\u001b[39m: \u001b[32m'DENY'\u001b[39m\n  },\n  raw: APIResponse: 200 \n    Server: nginx/1.18.0 (Ubuntu)\n    Date: Wed, 18 Feb 2026 06:33:43 GMT\n    Content-Type: application/json;charset=UTF-8\n    Transfer-Encoding: chunked\n    Connection: keep-alive\n    Vary: Origin\n    Vary: Access-Control-Request-Method\n    Vary: Access-Control-Request-Headers\n    X-Content-Type-Options: nosniff\n    X-XSS-Protection: 0\n    Cache-Control: no-cache, no-store, max-age=0, must-revalidate\n    Pragma: no-cache\n    Expires: 0\n    X-Frame-Options: DENY\n}\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-13T05:48:42.336Z",
+                      "startTime": "2026-02-18T06:33:42.488Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -166,9 +122,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-13T05:48:35.893Z",
-    "duration": 7166.31799999997,
-    "expected": 2,
+    "startTime": "2026-02-18T06:33:40.285Z",
+    "duration": 3677.037000000477,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

@@ -50,10 +50,6 @@ test.describe('Asset Management API - Asset Assigned To User', () => {
         asset.warrantyExpired === null || asset.warrantyExpired === undefined || typeof asset.warrantyExpired === 'string').toBeTruthy();
     });
 
-    console.log(
-      'Validated assigned assets:',
-      JSON.stringify(res.body.data, null, 2)
-    );
   });
 
   // Test case for employee user
@@ -69,8 +65,7 @@ test.describe('Asset Management API - Asset Assigned To User', () => {
         // Structure validation
         expect(res.body).toHaveProperty('data');
         expect(res.body.data).toBeNull();
-        console.log('Asset Assigned To User for Employee User:',
-             JSON.stringify(res.body, null, 2));
+  
     });
 
 });

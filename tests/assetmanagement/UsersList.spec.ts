@@ -85,10 +85,6 @@ test.describe('Asset Management API - Users List', () => {
       expect(typeof emp.isTech).toBe('boolean');
     });
 
-    console.log(
-      'Validated Users List:',
-      JSON.stringify(res.body.data, null, 2)
-    );
   });
 
     // Test case for employee user
@@ -106,7 +102,6 @@ test.describe('Asset Management API - Users List', () => {
         // Structure validation
         expect(res.body).toHaveProperty('data');
         expect(res.body.data).toBeNull();
-        console.log('Users List for Employee User:',
-             JSON.stringify(res.body, null, 2));
+  
     });
 });

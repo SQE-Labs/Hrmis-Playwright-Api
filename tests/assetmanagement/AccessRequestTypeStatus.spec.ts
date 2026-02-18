@@ -44,7 +44,6 @@ test.describe('Access Request Type Status', () => {
             expect(typeof accessType.description).toBe('string');
         });
 
-        console.log("Access Request Type Status response:", res.body);
 
     });
 
@@ -90,7 +89,6 @@ test.describe('Access Request Type Status', () => {
             expect(typeof accessType.description).toBe('string');
         });
 
-        console.log("Access Request Type Status response", res.body);
     });
 
 });

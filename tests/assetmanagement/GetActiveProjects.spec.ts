@@ -31,10 +31,6 @@ test.describe('Get Active Projects API', () => {
 
         });
 
-        console.log(
-            'Validated Active Projects List:',
-            JSON.stringify(res.body.data, null, 2)
-        );
     });
 
 
@@ -66,11 +62,7 @@ test.describe('Get Active Projects API', () => {
             expect(project).toHaveProperty('projectStatus');
             expect(typeof project.projectStatus).toBe('number');
         });
-
-        console.log(
-            'Validated Active Projects List for another user:',
-            JSON.stringify(res.body.data, null, 2)
-        );
+        
     });
 
 });
