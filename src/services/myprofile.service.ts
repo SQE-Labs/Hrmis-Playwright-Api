@@ -51,4 +51,11 @@ export class MyProfileService {
         return response;
     }
 
+    async getProfile(options?: RequestOptions){
+
+        let response = await this.request.get(ENDPOINTS.GET_PROFILE, options);
+        console.log("Profile:", response);
+        return response;
+    }
+
 }

@@ -9,6 +9,7 @@ export const ENDPOINTS = {
     GET_DOCUMENTS: '/HRMBackendTest/document',
     GET_STATUS_LIST: '/HRMBackendTest/document/v1/list/status',
     GET_APPRAISAL: '/HRMBackendTest/appraisal',
+    GET_PROFILE: '/HRMBackendTest/user/profile',
     GET_EMPLOYEES: '/HRMBackendTest/user',
     GET_ASSET_TYPE_BY_ID: '/HRMBackendTest/assest/total',
     GET_ASSET_LIST_SUMMARY: '/HRMBackendTest/assest/list',
