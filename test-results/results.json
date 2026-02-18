@@ -65,20 +65,20 @@
   },
   "suites": [
     {
-      "title": "myprofile\\Profile.spec.ts",
-      "file": "myprofile/Profile.spec.ts",
+      "title": "dashboard\\PunchDetails.spec.ts",
+      "file": "dashboard/PunchDetails.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Profile - My Profile",
-          "file": "myprofile/Profile.spec.ts",
+          "title": "Punch Details",
+          "file": "dashboard/PunchDetails.spec.ts",
           "line": 3,
           "column": 6,
           "specs": [
             {
-              "title": "IM-12 - Verify that profile of Employee is displayed with all the information",
+              "title": "IM-03: Verify that the punch details are displayed correctly for a specific employee",
               "ok": true,
               "tags": [],
               "tests": [
@@ -90,19 +90,19 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 6,
+                      "workerIndex": 10,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1811,
+                      "duration": 1401,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "Profile: {\n  status: \u001b[33m200\u001b[39m,\n  body: {\n    statusCode: \u001b[33m200\u001b[39m,\n    message: \u001b[32m'Profile fetched successfully'\u001b[39m,\n    data: {\n      personalDetail: \u001b[36m[Object]\u001b[39m,\n      assestDetail: [],\n      experience: [],\n      education: [],\n      dependents: [],\n      promotions: \u001b[36m[Array]\u001b[39m,\n      reimbursement: \u001b[36m[Array]\u001b[39m\n    }\n  },\n  headers: {\n    server: \u001b[32m'nginx/1.18.0 (Ubuntu)'\u001b[39m,\n    date: \u001b[32m'Wed, 18 Feb 2026 06:20:11 GMT'\u001b[39m,\n    \u001b[32m'content-type'\u001b[39m: \u001b[32m'application/json;charset=UTF-8'\u001b[39m,\n    \u001b[32m'transfer-encoding'\u001b[39m: \u001b[32m'chunked'\u001b[39m,\n    connection: \u001b[32m'keep-alive'\u001b[39m,\n    vary: \u001b[32m'Origin, Access-Control-Request-Method, Access-Control-Request-Headers'\u001b[39m,\n    \u001b[32m'x-content-type-options'\u001b[39m: \u001b[32m'nosniff'\u001b[39m,\n    \u001b[32m'x-xss-protection'\u001b[39m: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'cache-control'\u001b[39m: \u001b[32m'no-cache, no-store, max-age=0, must-revalidate'\u001b[39m,\n    pragma: \u001b[32m'no-cache'\u001b[39m,\n    expires: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'x-frame-options'\u001b[39m: \u001b[32m'DENY'\u001b[39m\n  },\n  raw: APIResponse: 200 \n    Server: nginx/1.18.0 (Ubuntu)\n    Date: Wed, 18 Feb 2026 06:20:11 GMT\n    Content-Type: application/json;charset=UTF-8\n    Transfer-Encoding: chunked\n    Connection: keep-alive\n    Vary: Origin\n    Vary: Access-Control-Request-Method\n    Vary: Access-Control-Request-Headers\n    X-Content-Type-Options: nosniff\n    X-XSS-Protection: 0\n    Cache-Control: no-cache, no-store, max-age=0, must-revalidate\n    Pragma: no-cache\n    Expires: 0\n    X-Frame-Options: DENY\n}\n"
+                          "text": "Punch Details response: {\n  status: \u001b[33m200\u001b[39m,\n  body: { data: [] },\n  headers: {\n    server: \u001b[32m'nginx/1.18.0 (Ubuntu)'\u001b[39m,\n    date: \u001b[32m'Wed, 18 Feb 2026 06:33:43 GMT'\u001b[39m,\n    \u001b[32m'content-type'\u001b[39m: \u001b[32m'application/json;charset=UTF-8'\u001b[39m,\n    \u001b[32m'transfer-encoding'\u001b[39m: \u001b[32m'chunked'\u001b[39m,\n    connection: \u001b[32m'keep-alive'\u001b[39m,\n    vary: \u001b[32m'Origin, Access-Control-Request-Method, Access-Control-Request-Headers'\u001b[39m,\n    \u001b[32m'x-content-type-options'\u001b[39m: \u001b[32m'nosniff'\u001b[39m,\n    \u001b[32m'x-xss-protection'\u001b[39m: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'cache-control'\u001b[39m: \u001b[32m'no-cache, no-store, max-age=0, must-revalidate'\u001b[39m,\n    pragma: \u001b[32m'no-cache'\u001b[39m,\n    expires: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'x-frame-options'\u001b[39m: \u001b[32m'DENY'\u001b[39m\n  },\n  raw: APIResponse: 200 \n    Server: nginx/1.18.0 (Ubuntu)\n    Date: Wed, 18 Feb 2026 06:33:43 GMT\n    Content-Type: application/json;charset=UTF-8\n    Transfer-Encoding: chunked\n    Connection: keep-alive\n    Vary: Origin\n    Vary: Access-Control-Request-Method\n    Vary: Access-Control-Request-Headers\n    X-Content-Type-Options: nosniff\n    X-XSS-Protection: 0\n    Cache-Control: no-cache, no-store, max-age=0, must-revalidate\n    Pragma: no-cache\n    Expires: 0\n    X-Frame-Options: DENY\n}\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-18T06:20:09.550Z",
+                      "startTime": "2026-02-18T06:33:42.488Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -110,9 +110,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "7d7fafa1939b53bb73ff-d46afdea06d2d860b8f6",
-              "file": "myprofile/Profile.spec.ts",
-              "line": 46,
+              "id": "e7b4e11ea97aafad8c66-075b93076477e60e5abf",
+              "file": "dashboard/PunchDetails.spec.ts",
+              "line": 40,
               "column": 9
             }
           ]
@@ -122,8 +122,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-02-18T06:20:06.606Z",
-    "duration": 4829.86400000006,
+    "startTime": "2026-02-18T06:33:40.285Z",
+    "duration": 3677.037000000477,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
