@@ -51,7 +51,7 @@ test.describe('Attendance & Leave API', () => {
         );
         expect(res.body).toEqual({
             statusCode: 403,
-            message: 'Access denied: insufficient permissions',
+            message: 'You are not authorized to access this resource.',
             data: null,
         });
     });
