@@ -37,19 +37,15 @@ export async function getAuthToken(role: Role): Promise<string> {
     `${process.env.BASE_URL}/HRMBackendTest/api/auth/signin`,
      {data :{"email": credentials.email, "password": credentials.password}}
   );
-  // console.log(`Auth request sent for role ${role}`, { data: credentials });
-  // console.log(`auth url received for role ${role} :`, `${process.env.BASE_URL}/HRMBackendTest/api/auth/signin`);
-  // console.log(`Auth response status for role ${role}:`, response.status());
+  
+  
   const responseText = await response.text();
-  //console.log(`Auth response body for role ${role}:`, responseText);
 
   if (!response.ok()) {
     throw new Error(`Auth failed for role: ${role}. Status: ${response.status()}, Body: ${responseText}`);
   }
 
   const body = await response.json();
-  // console.log(`Parsed body:`, body);
-  // console.log(`Token property:`, body.accessToken || body.token || Object.keys(body));
   
   tokenCache[role] = body.accessToken;
 

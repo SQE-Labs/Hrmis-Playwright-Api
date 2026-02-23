@@ -21,10 +21,7 @@ test.describe('Asset Management API - Asset Assigned To User', () => {
             expect(typeof asset.fullName).toBe('string');
 
         });
-        console.log(
-            'Validated Asset Access Request DL List:',
-            JSON.stringify(res.body.data, null, 2)
-        );
+        
     });
 
     test('Verify asset access request dl list is returned correctly for another valid user', async ({apiAsEmployee}) => {
@@ -46,10 +43,7 @@ test.describe('Asset Management API - Asset Assigned To User', () => {
             expect(typeof asset.fullName).toBe('string');
         });
 
-        console.log(
-            'Validated Asset Access Request DL List:',
-            JSON.stringify(res.body.data, null, 2)
-        );
+        
     });
 
 });

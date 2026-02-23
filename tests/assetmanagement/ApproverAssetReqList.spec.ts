@@ -28,10 +28,6 @@ test.describe('Get Approver Asset Request List - API', () => {
 
         expect(res.body).toHaveProperty('status');
 
-        console.log(
-            'Validated Approver Asset Request List:',
-            JSON.stringify(res.body, null, 2)
-        );
     });
 
     test('IM-34 Verify approver asset request list is returned correctly for another valid user', async ({apiAsEmployee}) => {
@@ -47,10 +43,6 @@ test.describe('Get Approver Asset Request List - API', () => {
         //Message Validation
         expect(res.body.message).toBe('You are not authorized to access this resource.');
 
-        console.log(
-            'Approver Asset Request List Access Denied Message:',
-            JSON.stringify(res.body.message, null, 2)
-        );
     });
 });
 

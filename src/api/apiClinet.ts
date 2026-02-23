@@ -3,11 +3,15 @@ import { RequestBuilder } from './requestBuilder';
 import { AssetManagementService } from '../services/assetmanagement.service';
 import { AttendanceAndLeave } from '../services/attendance&leave';
 import { EmployeeManagementService } from '../services/employeemanagement.service';
+import { DashboardService } from '../services/dashboard.service';
+import { MyProfileService } from '../services/myprofile.service';
 
 export class ApiClient {
   readonly assets!: AssetManagementService;
   readonly attendanceAndLeave!: AttendanceAndLeave;
   readonly employeeManagement!: EmployeeManagementService;
+  readonly dashboard!: DashboardService;
+  readonly myProfile!: MyProfileService;
 
   constructor(context: APIRequestContext, token: string) {
     const request = new RequestBuilder(context, {
@@ -18,5 +22,7 @@ export class ApiClient {
     this.assets = new AssetManagementService(request);
     this.attendanceAndLeave = new AttendanceAndLeave(request);
     this.employeeManagement = new EmployeeManagementService(request);
+    this.dashboard = new DashboardService(request);
+    this.myProfile = new MyProfileService(request);
   }
 }
