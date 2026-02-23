@@ -76,4 +76,22 @@ export class MyProfileService {
             return response;
         }
 
+     async getTaxForm(
+        params: {
+            year?: number;
+        } = {},
+        options?: RequestOptions
+        ){
+            const response = await this.request.get(
+                ENDPOINTS.GET_TAX_FORM,
+                {
+                    ...options,
+                    params: {
+                        year: params.year?? 2026,
+                    }
+                }
+            );
+            console.log("Tax Form:", response);
+            return response;
+        }
 }
