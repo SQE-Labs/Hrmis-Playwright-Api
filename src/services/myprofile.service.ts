@@ -57,5 +57,23 @@ export class MyProfileService {
         console.log("Profile:", response);
         return response;
     }
+    async getSalary(
+        params: {
+            year?: number;
+        } = {},
+        options?: RequestOptions
+        ){
+            const response = await this.request.get(
+                ENDPOINTS.GET_SALARY_RECORD,
+                {
+                    ...options,
+                    params: {
+                        year: params.year?? 2026,
+                    }
+                }
+            );
+            console.log("Salary record:", response);
+            return response;
+        }
 
 }
