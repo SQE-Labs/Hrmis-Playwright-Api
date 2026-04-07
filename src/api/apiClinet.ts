@@ -6,6 +6,7 @@ import { EmployeeManagementService } from '../services/employeemanagement.servic
 import { DashboardService } from '../services/dashboard.service';
 import { MyProfileService } from '../services/myprofile.service';
 import { PerformanceService} from '../services/performance.service';
+import { ProjectTeamFlowService } from '../services/projectteamflow.service';
 
 export class ApiClient {
   readonly assets!: AssetManagementService;
@@ -14,6 +15,7 @@ export class ApiClient {
   readonly dashboard!: DashboardService;
   readonly myProfile!: MyProfileService;
   readonly performance!: PerformanceService;
+  readonly projectTeamFlow!: ProjectTeamFlowService;
 
 
   constructor(context: APIRequestContext, token: string) {
@@ -28,5 +30,6 @@ export class ApiClient {
     this.dashboard = new DashboardService(request);
     this.myProfile = new MyProfileService(request);
     this.performance = new PerformanceService(request);
+    this.projectTeamFlow = new ProjectTeamFlowService(request);
   }
 }

@@ -13,6 +13,7 @@ export const ENDPOINTS = {
     GET_SALARY_RECORD: '/HRMBackendTest/salary',
     GET_TAX_FORM: '/HRMBackendTest/form16',
     GET_PERFORMANCE: 'HRMBackendTest/performance/data',
+    GET_PROJECT_MANAGER_LIST: 'HRMBackendTest/project/pm/list',
     GET_EMPLOYEES: '/HRMBackendTest/user',
     GET_ASSET_TYPE_BY_ID: '/HRMBackendTest/assest/total',
     GET_ASSET_LIST_SUMMARY: '/HRMBackendTest/assest/list',

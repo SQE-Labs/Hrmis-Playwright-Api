@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "/Users/sqelabs/Desktop/HRMIS_PLAYWRIGHT_API/playwright.config.ts",
-    "rootDir": "/Users/sqelabs/Desktop/HRMIS_PLAYWRIGHT_API/tests",
+    "configFile": "C:\\Hrmis-Playwright-Api\\playwright.config.ts",
+    "rootDir": "C:/Hrmis-Playwright-Api/tests",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 2
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -39,15 +39,15 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "/Users/sqelabs/Desktop/HRMIS_PLAYWRIGHT_API/test-results",
+        "outputDir": "C:/Hrmis-Playwright-Api/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 2
+          "actualWorkers": 1
         },
         "id": "",
         "name": "",
-        "testDir": "/Users/sqelabs/Desktop/HRMIS_PLAYWRIGHT_API/tests",
+        "testDir": "C:/Hrmis-Playwright-Api/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -58,38 +58,27 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "patch",
+    "updateSourceMethod": "3way",
     "version": "1.57.0",
-    "workers": 2,
+    "workers": 4,
     "webServer": null
   },
   "suites": [
     {
-<<<<<<< HEAD
-      "title": "dashboard\\PunchDetails.spec.ts",
-      "file": "dashboard/PunchDetails.spec.ts",
-=======
-      "title": "performance\\PerformanceData.spec.ts",
-      "file": "performance/PerformanceData.spec.ts",
->>>>>>> c314816 (Performance Data Api is automated)
+      "title": "projectteamflow\\ProjectManagerList.spec.ts",
+      "file": "projectteamflow/ProjectManagerList.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-<<<<<<< HEAD
-          "title": "Punch Details",
-          "file": "dashboard/PunchDetails.spec.ts",
-=======
-          "title": "Performance Data",
-          "file": "performance/PerformanceData.spec.ts",
->>>>>>> c314816 (Performance Data Api is automated)
+          "title": "Project Manager List API",
+          "file": "projectteamflow/ProjectManagerList.spec.ts",
           "line": 3,
           "column": 6,
           "specs": [
             {
-<<<<<<< HEAD
-              "title": "IM-03: Verify that the punch details are displayed correctly for a specific punch",
+              "title": "Verify that the project manager list returns a successful respone with Super Admin role",
               "ok": true,
               "tags": [],
               "tests": [
@@ -102,18 +91,18 @@
                   "results": [
                     {
                       "workerIndex": 8,
-                      "parallelIndex": 1,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1343,
+                      "duration": 1952,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "Punch Details response: {\n  status: \u001b[33m200\u001b[39m,\n  body: {\n    data: [\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m\n    ]\n  },\n  headers: {\n    server: \u001b[32m'nginx/1.18.0 (Ubuntu)'\u001b[39m,\n    date: \u001b[32m'Mon, 23 Feb 2026 10:09:49 GMT'\u001b[39m,\n    \u001b[32m'content-type'\u001b[39m: \u001b[32m'application/json;charset=UTF-8'\u001b[39m,\n    \u001b[32m'transfer-encoding'\u001b[39m: \u001b[32m'chunked'\u001b[39m,\n    connection: \u001b[32m'keep-alive'\u001b[39m,\n    vary: \u001b[32m'Origin, Access-Control-Request-Method, Access-Control-Request-Headers'\u001b[39m,\n    \u001b[32m'x-content-type-options'\u001b[39m: \u001b[32m'nosniff'\u001b[39m,\n    \u001b[32m'x-xss-protection'\u001b[39m: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'cache-control'\u001b[39m: \u001b[32m'no-cache, no-store, max-age=0, must-revalidate'\u001b[39m,\n    pragma: \u001b[32m'no-cache'\u001b[39m,\n    expires: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'x-frame-options'\u001b[39m: \u001b[32m'DENY'\u001b[39m\n  },\n  raw: APIResponse: 200 \n    Server: nginx/1.18.0 (Ubuntu)\n    Date: Mon, 23 Feb 2026 10:09:49 GMT\n    Content-Type: application/json;charset=UTF-8\n    Transfer-Encoding: chunked\n    Connection: keep-alive\n    Vary: Origin\n    Vary: Access-Control-Request-Method\n    Vary: Access-Control-Request-Headers\n    X-Content-Type-Options: nosniff\n    X-XSS-Protection: 0\n    Cache-Control: no-cache, no-store, max-age=0, must-revalidate\n    Pragma: no-cache\n    Expires: 0\n    X-Frame-Options: DENY\n}\n"
+                          "text": "Project Manager List API response: {\n  status: \u001b[33m200\u001b[39m,\n  body: { data: [ \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m ] },\n  headers: {\n    server: \u001b[32m'nginx/1.18.0 (Ubuntu)'\u001b[39m,\n    date: \u001b[32m'Tue, 07 Apr 2026 07:59:36 GMT'\u001b[39m,\n    \u001b[32m'content-type'\u001b[39m: \u001b[32m'application/json;charset=UTF-8'\u001b[39m,\n    \u001b[32m'transfer-encoding'\u001b[39m: \u001b[32m'chunked'\u001b[39m,\n    connection: \u001b[32m'keep-alive'\u001b[39m,\n    vary: \u001b[32m'Origin, Access-Control-Request-Method, Access-Control-Request-Headers'\u001b[39m,\n    \u001b[32m'x-content-type-options'\u001b[39m: \u001b[32m'nosniff'\u001b[39m,\n    \u001b[32m'x-xss-protection'\u001b[39m: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'cache-control'\u001b[39m: \u001b[32m'no-cache, no-store, max-age=0, must-revalidate'\u001b[39m,\n    pragma: \u001b[32m'no-cache'\u001b[39m,\n    expires: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'x-frame-options'\u001b[39m: \u001b[32m'DENY'\u001b[39m\n  },\n  raw: APIResponse: 200 \n    Server: nginx/1.18.0 (Ubuntu)\n    Date: Tue, 07 Apr 2026 07:59:36 GMT\n    Content-Type: application/json;charset=UTF-8\n    Transfer-Encoding: chunked\n    Connection: keep-alive\n    Vary: Origin\n    Vary: Access-Control-Request-Method\n    Vary: Access-Control-Request-Headers\n    X-Content-Type-Options: nosniff\n    X-XSS-Protection: 0\n    Cache-Control: no-cache, no-store, max-age=0, must-revalidate\n    Pragma: no-cache\n    Expires: 0\n    X-Frame-Options: DENY\n}\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-23T10:09:48.027Z",
+                      "startTime": "2026-04-07T07:59:35.084Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -121,218 +110,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "1c66d92e1f89e6e02fec-00f57f031c03d326f485",
-              "file": "Dashboard/PunchDetails.spec.ts",
+              "id": "801133b9a0791673770b-4032a40e36ec0a217732",
+              "file": "projectteamflow/ProjectManagerList.spec.ts",
               "line": 5,
               "column": 9
             },
             {
-              "title": "IM-14 - Verify that tax form is displayed correctly for the Super Admin role",
-=======
-              "title": "IM-15 - Verify that performance data is retrieved successfully for the Super Admin role",
->>>>>>> c314816 (Performance Data Api is automated)
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 2040,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Performance Response: {\n  status: \u001b[33m200\u001b[39m,\n  body: {\n    data: {\n      userId: \u001b[33m271\u001b[39m,\n      performanceData: \u001b[36m[Object]\u001b[39m,\n      status: \u001b[33m0\u001b[39m,\n      isFilled: \u001b[33m1\u001b[39m,\n      isSubmitted: \u001b[33m1\u001b[39m\n    }\n  },\n  headers: {\n    server: \u001b[32m'nginx/1.18.0 (Ubuntu)'\u001b[39m,\n    date: \u001b[32m'Tue, 07 Apr 2026 06:26:36 GMT'\u001b[39m,\n    \u001b[32m'content-type'\u001b[39m: \u001b[32m'application/json;charset=UTF-8'\u001b[39m,\n    \u001b[32m'transfer-encoding'\u001b[39m: \u001b[32m'chunked'\u001b[39m,\n    connection: \u001b[32m'keep-alive'\u001b[39m,\n    vary: \u001b[32m'Origin, Access-Control-Request-Method, Access-Control-Request-Headers'\u001b[39m,\n    \u001b[32m'x-content-type-options'\u001b[39m: \u001b[32m'nosniff'\u001b[39m,\n    \u001b[32m'x-xss-protection'\u001b[39m: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'cache-control'\u001b[39m: \u001b[32m'no-cache, no-store, max-age=0, must-revalidate'\u001b[39m,\n    pragma: \u001b[32m'no-cache'\u001b[39m,\n    expires: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'x-frame-options'\u001b[39m: \u001b[32m'DENY'\u001b[39m\n  },\n  raw: APIResponse: 200 \n    Server: nginx/1.18.0 (Ubuntu)\n    Date: Tue, 07 Apr 2026 06:26:36 GMT\n    Content-Type: application/json;charset=UTF-8\n    Transfer-Encoding: chunked\n    Connection: keep-alive\n    Vary: Origin\n    Vary: Access-Control-Request-Method\n    Vary: Access-Control-Request-Headers\n    X-Content-Type-Options: nosniff\n    X-XSS-Protection: 0\n    Cache-Control: no-cache, no-store, max-age=0, must-revalidate\n    Pragma: no-cache\n    Expires: 0\n    X-Frame-Options: DENY\n}\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-04-07T06:26:34.971Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "7d53943501e7d063956d-2659d454953eb962414a",
-              "file": "performance/PerformanceData.spec.ts",
-              "line": 5,
-              "column": 9
-            },
-            {
-              "title": "IM-15 - Verify that performance data is retrieved successfully for the Employee role",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-<<<<<<< HEAD
-                      "workerIndex": 10,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1401,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Punch Details response: {\n  status: \u001b[33m200\u001b[39m,\n  body: { data: [] },\n  headers: {\n    server: \u001b[32m'nginx/1.18.0 (Ubuntu)'\u001b[39m,\n    date: \u001b[32m'Wed, 18 Feb 2026 06:33:43 GMT'\u001b[39m,\n    \u001b[32m'content-type'\u001b[39m: \u001b[32m'application/json;charset=UTF-8'\u001b[39m,\n    \u001b[32m'transfer-encoding'\u001b[39m: \u001b[32m'chunked'\u001b[39m,\n    connection: \u001b[32m'keep-alive'\u001b[39m,\n    vary: \u001b[32m'Origin, Access-Control-Request-Method, Access-Control-Request-Headers'\u001b[39m,\n    \u001b[32m'x-content-type-options'\u001b[39m: \u001b[32m'nosniff'\u001b[39m,\n    \u001b[32m'x-xss-protection'\u001b[39m: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'cache-control'\u001b[39m: \u001b[32m'no-cache, no-store, max-age=0, must-revalidate'\u001b[39m,\n    pragma: \u001b[32m'no-cache'\u001b[39m,\n    expires: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'x-frame-options'\u001b[39m: \u001b[32m'DENY'\u001b[39m\n  },\n  raw: APIResponse: 200 \n    Server: nginx/1.18.0 (Ubuntu)\n    Date: Wed, 18 Feb 2026 06:33:43 GMT\n    Content-Type: application/json;charset=UTF-8\n    Transfer-Encoding: chunked\n    Connection: keep-alive\n    Vary: Origin\n    Vary: Access-Control-Request-Method\n    Vary: Access-Control-Request-Headers\n    X-Content-Type-Options: nosniff\n    X-XSS-Protection: 0\n    Cache-Control: no-cache, no-store, max-age=0, must-revalidate\n    Pragma: no-cache\n    Expires: 0\n    X-Frame-Options: DENY\n}\n"
-=======
-                      "workerIndex": 5,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 861,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Performance Response: {\n  status: \u001b[33m200\u001b[39m,\n  body: {\n    data: {\n      userId: \u001b[1mnull\u001b[22m,\n      performanceData: \u001b[1mnull\u001b[22m,\n      status: \u001b[33m0\u001b[39m,\n      isFilled: \u001b[33m0\u001b[39m,\n      isSubmitted: \u001b[33m0\u001b[39m\n    }\n  },\n  headers: {\n    server: \u001b[32m'nginx/1.18.0 (Ubuntu)'\u001b[39m,\n    date: \u001b[32m'Tue, 07 Apr 2026 06:26:37 GMT'\u001b[39m,\n    \u001b[32m'content-type'\u001b[39m: \u001b[32m'application/json;charset=UTF-8'\u001b[39m,\n    \u001b[32m'transfer-encoding'\u001b[39m: \u001b[32m'chunked'\u001b[39m,\n    connection: \u001b[32m'keep-alive'\u001b[39m,\n    vary: \u001b[32m'Origin, Access-Control-Request-Method, Access-Control-Request-Headers'\u001b[39m,\n    \u001b[32m'x-content-type-options'\u001b[39m: \u001b[32m'nosniff'\u001b[39m,\n    \u001b[32m'x-xss-protection'\u001b[39m: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'cache-control'\u001b[39m: \u001b[32m'no-cache, no-store, max-age=0, must-revalidate'\u001b[39m,\n    pragma: \u001b[32m'no-cache'\u001b[39m,\n    expires: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'x-frame-options'\u001b[39m: \u001b[32m'DENY'\u001b[39m\n  },\n  raw: APIResponse: 200 \n    Server: nginx/1.18.0 (Ubuntu)\n    Date: Tue, 07 Apr 2026 06:26:37 GMT\n    Content-Type: application/json;charset=UTF-8\n    Transfer-Encoding: chunked\n    Connection: keep-alive\n    Vary: Origin\n    Vary: Access-Control-Request-Method\n    Vary: Access-Control-Request-Headers\n    X-Content-Type-Options: nosniff\n    X-XSS-Protection: 0\n    Cache-Control: no-cache, no-store, max-age=0, must-revalidate\n    Pragma: no-cache\n    Expires: 0\n    X-Frame-Options: DENY\n}\n"
->>>>>>> c314816 (Performance Data Api is automated)
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-<<<<<<< HEAD
-                      "startTime": "2026-02-18T06:33:42.488Z",
-=======
-                      "startTime": "2026-04-07T06:26:37.041Z",
->>>>>>> c314816 (Performance Data Api is automated)
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-<<<<<<< HEAD
-              "id": "e7b4e11ea97aafad8c66-075b93076477e60e5abf",
-              "file": "dashboard/PunchDetails.spec.ts",
-              "line": 40,
-              "column": 9
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "myprofile/DocumentDetails.spec.ts",
-      "file": "myprofile/DocumentDetails.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Document Details - My Profile",
-          "file": "myprofile/DocumentDetails.spec.ts",
-          "line": 3,
-          "column": 6,
-          "specs": [
-            {
-              "title": "IM-08 - Verify that the Super Admin can view the document details in my profile",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 355,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Documents Response: {\n  status: \u001b[33m200\u001b[39m,\n  body: {\n    data: [\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m\n    ],\n    message: \u001b[32m'Success'\u001b[39m\n  },\n  headers: {\n    server: \u001b[32m'nginx/1.18.0 (Ubuntu)'\u001b[39m,\n    date: \u001b[32m'Mon, 23 Feb 2026 10:09:50 GMT'\u001b[39m,\n    \u001b[32m'content-type'\u001b[39m: \u001b[32m'application/json;charset=UTF-8'\u001b[39m,\n    \u001b[32m'transfer-encoding'\u001b[39m: \u001b[32m'chunked'\u001b[39m,\n    connection: \u001b[32m'keep-alive'\u001b[39m,\n    vary: \u001b[32m'Origin, Access-Control-Request-Method, Access-Control-Request-Headers'\u001b[39m,\n    \u001b[32m'x-content-type-options'\u001b[39m: \u001b[32m'nosniff'\u001b[39m,\n    \u001b[32m'x-xss-protection'\u001b[39m: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'cache-control'\u001b[39m: \u001b[32m'no-cache, no-store, max-age=0, must-revalidate'\u001b[39m,\n    pragma: \u001b[32m'no-cache'\u001b[39m,\n    expires: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'x-frame-options'\u001b[39m: \u001b[32m'DENY'\u001b[39m\n  },\n  raw: APIResponse: 200 \n    Server: nginx/1.18.0 (Ubuntu)\n    Date: Mon, 23 Feb 2026 10:09:50 GMT\n    Content-Type: application/json;charset=UTF-8\n    Transfer-Encoding: chunked\n    Connection: keep-alive\n    Vary: Origin\n    Vary: Access-Control-Request-Method\n    Vary: Access-Control-Request-Headers\n    X-Content-Type-Options: nosniff\n    X-XSS-Protection: 0\n    Cache-Control: no-cache, no-store, max-age=0, must-revalidate\n    Pragma: no-cache\n    Expires: 0\n    X-Frame-Options: DENY\n}\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-23T10:09:50.561Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "8c0902b9eaa293cb2760-b9b6582af2315c297f79",
-              "file": "myprofile/DocumentDetails.spec.ts",
-              "line": 5,
-              "column": 9
-            },
-            {
-              "title": "IM-08 - Verify that the Employee can view the document details in my profile",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 341,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Documents Response: {\n  status: \u001b[33m200\u001b[39m,\n  body: {\n    data: [ \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m ],\n    message: \u001b[32m'Success'\u001b[39m\n  },\n  headers: {\n    server: \u001b[32m'nginx/1.18.0 (Ubuntu)'\u001b[39m,\n    date: \u001b[32m'Mon, 23 Feb 2026 10:09:51 GMT'\u001b[39m,\n    \u001b[32m'content-type'\u001b[39m: \u001b[32m'application/json;charset=UTF-8'\u001b[39m,\n    \u001b[32m'transfer-encoding'\u001b[39m: \u001b[32m'chunked'\u001b[39m,\n    connection: \u001b[32m'keep-alive'\u001b[39m,\n    vary: \u001b[32m'Origin, Access-Control-Request-Method, Access-Control-Request-Headers'\u001b[39m,\n    \u001b[32m'x-content-type-options'\u001b[39m: \u001b[32m'nosniff'\u001b[39m,\n    \u001b[32m'x-xss-protection'\u001b[39m: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'cache-control'\u001b[39m: \u001b[32m'no-cache, no-store, max-age=0, must-revalidate'\u001b[39m,\n    pragma: \u001b[32m'no-cache'\u001b[39m,\n    expires: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'x-frame-options'\u001b[39m: \u001b[32m'DENY'\u001b[39m\n  },\n  raw: APIResponse: 200 \n    Server: nginx/1.18.0 (Ubuntu)\n    Date: Mon, 23 Feb 2026 10:09:51 GMT\n    Content-Type: application/json;charset=UTF-8\n    Transfer-Encoding: chunked\n    Connection: keep-alive\n    Vary: Origin\n    Vary: Access-Control-Request-Method\n    Vary: Access-Control-Request-Headers\n    X-Content-Type-Options: nosniff\n    X-XSS-Protection: 0\n    Cache-Control: no-cache, no-store, max-age=0, must-revalidate\n    Pragma: no-cache\n    Expires: 0\n    X-Frame-Options: DENY\n}\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-23T10:09:50.926Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "8c0902b9eaa293cb2760-c404b9a6066e75852c8a",
-              "file": "myprofile/DocumentDetails.spec.ts",
-              "line": 43,
-              "column": 9
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "myprofile/DocumentStatusList.spec.ts",
-      "file": "myprofile/DocumentStatusList.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Document Status List - My Profile",
-          "file": "myprofile/DocumentStatusList.spec.ts",
-          "line": 3,
-          "column": 6,
-          "specs": [
-            {
-              "title": "IM-09 - Verify the status of the documents is displayed corrctly using Super Admin role",
+              "title": "Verify that the project manager list returns a successful response with employee role",
               "ok": true,
               "tags": [],
               "tests": [
@@ -345,196 +129,18 @@
                   "results": [
                     {
                       "workerIndex": 8,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 360,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Document Status List: {\n  status: \u001b[33m200\u001b[39m,\n  body: {\n    data: [\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m\n    ],\n    message: \u001b[32m'Success'\u001b[39m\n  },\n  headers: {\n    server: \u001b[32m'nginx/1.18.0 (Ubuntu)'\u001b[39m,\n    date: \u001b[32m'Mon, 23 Feb 2026 10:09:50 GMT'\u001b[39m,\n    \u001b[32m'content-type'\u001b[39m: \u001b[32m'application/json;charset=UTF-8'\u001b[39m,\n    \u001b[32m'transfer-encoding'\u001b[39m: \u001b[32m'chunked'\u001b[39m,\n    connection: \u001b[32m'keep-alive'\u001b[39m,\n    vary: \u001b[32m'Origin, Access-Control-Request-Method, Access-Control-Request-Headers'\u001b[39m,\n    \u001b[32m'x-content-type-options'\u001b[39m: \u001b[32m'nosniff'\u001b[39m,\n    \u001b[32m'x-xss-protection'\u001b[39m: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'cache-control'\u001b[39m: \u001b[32m'no-cache, no-store, max-age=0, must-revalidate'\u001b[39m,\n    pragma: \u001b[32m'no-cache'\u001b[39m,\n    expires: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'x-frame-options'\u001b[39m: \u001b[32m'DENY'\u001b[39m\n  },\n  raw: APIResponse: 200 \n    Server: nginx/1.18.0 (Ubuntu)\n    Date: Mon, 23 Feb 2026 10:09:50 GMT\n    Content-Type: application/json;charset=UTF-8\n    Transfer-Encoding: chunked\n    Connection: keep-alive\n    Vary: Origin\n    Vary: Access-Control-Request-Method\n    Vary: Access-Control-Request-Headers\n    X-Content-Type-Options: nosniff\n    X-XSS-Protection: 0\n    Cache-Control: no-cache, no-store, max-age=0, must-revalidate\n    Pragma: no-cache\n    Expires: 0\n    X-Frame-Options: DENY\n}\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-23T10:09:50.807Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "846945b6ea0ac7f45132-a5a1d676c38c236d9619",
-              "file": "myprofile/DocumentStatusList.spec.ts",
-              "line": 5,
-              "column": 9
-            },
-            {
-              "title": "IM-09 - Verify the status of the documents is displayed corrctly using Employee Role",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 8,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 363,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Document Status List: {\n  status: \u001b[33m200\u001b[39m,\n  body: {\n    data: [\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m, \u001b[36m[Object]\u001b[39m,\n      \u001b[36m[Object]\u001b[39m\n    ],\n    message: \u001b[32m'Success'\u001b[39m\n  },\n  headers: {\n    server: \u001b[32m'nginx/1.18.0 (Ubuntu)'\u001b[39m,\n    date: \u001b[32m'Mon, 23 Feb 2026 10:09:51 GMT'\u001b[39m,\n    \u001b[32m'content-type'\u001b[39m: \u001b[32m'application/json;charset=UTF-8'\u001b[39m,\n    \u001b[32m'transfer-encoding'\u001b[39m: \u001b[32m'chunked'\u001b[39m,\n    connection: \u001b[32m'keep-alive'\u001b[39m,\n    vary: \u001b[32m'Origin, Access-Control-Request-Method, Access-Control-Request-Headers'\u001b[39m,\n    \u001b[32m'x-content-type-options'\u001b[39m: \u001b[32m'nosniff'\u001b[39m,\n    \u001b[32m'x-xss-protection'\u001b[39m: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'cache-control'\u001b[39m: \u001b[32m'no-cache, no-store, max-age=0, must-revalidate'\u001b[39m,\n    pragma: \u001b[32m'no-cache'\u001b[39m,\n    expires: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'x-frame-options'\u001b[39m: \u001b[32m'DENY'\u001b[39m\n  },\n  raw: APIResponse: 200 \n    Server: nginx/1.18.0 (Ubuntu)\n    Date: Mon, 23 Feb 2026 10:09:51 GMT\n    Content-Type: application/json;charset=UTF-8\n    Transfer-Encoding: chunked\n    Connection: keep-alive\n    Vary: Origin\n    Vary: Access-Control-Request-Method\n    Vary: Access-Control-Request-Headers\n    X-Content-Type-Options: nosniff\n    X-XSS-Protection: 0\n    Cache-Control: no-cache, no-store, max-age=0, must-revalidate\n    Pragma: no-cache\n    Expires: 0\n    X-Frame-Options: DENY\n}\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-23T10:09:51.178Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "846945b6ea0ac7f45132-8693fb37804c44b34e2f",
-              "file": "myprofile/DocumentStatusList.spec.ts",
-              "line": 43,
-              "column": 9
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "myprofile/MyAssetAssigned.spec.ts",
-      "file": "myprofile/MyAssetAssigned.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "My Profile - My Asset Assigned",
-          "file": "myprofile/MyAssetAssigned.spec.ts",
-          "line": 3,
-          "column": 6,
-          "specs": [
-            {
-              "title": "IM-07 - Verify that the My Asset Assigned endpoint is working for Super Admin role",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 511,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-23T10:09:51.284Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "0c52182afd4004fae5e4-9a1480e169c632b62c46",
-              "file": "myprofile/MyAssetAssigned.spec.ts",
-              "line": 5,
-              "column": 9
-            },
-            {
-              "title": "IM-07 - Verify that the My Asset Assigned endpoint is working for Employee role",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 321,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-23T10:09:51.804Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "0c52182afd4004fae5e4-2302d49324a476dedae2",
-              "file": "myprofile/MyAssetAssigned.spec.ts",
-              "line": 55,
-              "column": 9
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "myprofile/Profile.spec.ts",
-      "file": "myprofile/Profile.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Profile - My Profile",
-          "file": "myprofile/Profile.spec.ts",
-          "line": 3,
-          "column": 6,
-          "specs": [
-            {
-              "title": "IM-12 - Verify that profile of Super Admin is displayed with all the information",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 8,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 2096,
+                      "duration": 868,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "Profile: {\n  status: \u001b[33m200\u001b[39m,\n  body: {\n    statusCode: \u001b[33m200\u001b[39m,\n    message: \u001b[32m'Profile fetched successfully'\u001b[39m,\n    data: {\n      personalDetail: \u001b[36m[Object]\u001b[39m,\n      assestDetail: \u001b[36m[Array]\u001b[39m,\n      experience: \u001b[36m[Array]\u001b[39m,\n      education: \u001b[36m[Array]\u001b[39m,\n      dependents: \u001b[36m[Array]\u001b[39m,\n      promotions: \u001b[36m[Array]\u001b[39m,\n      reimbursement: \u001b[36m[Array]\u001b[39m\n    }\n  },\n  headers: {\n    server: \u001b[32m'nginx/1.18.0 (Ubuntu)'\u001b[39m,\n    date: \u001b[32m'Mon, 23 Feb 2026 10:09:51 GMT'\u001b[39m,\n    \u001b[32m'content-type'\u001b[39m: \u001b[32m'application/json;charset=UTF-8'\u001b[39m,\n    \u001b[32m'transfer-encoding'\u001b[39m: \u001b[32m'chunked'\u001b[39m,\n    connection: \u001b[32m'keep-alive'\u001b[39m,\n    vary: \u001b[32m'Origin, Access-Control-Request-Method, Access-Control-Request-Headers'\u001b[39m,\n    \u001b[32m'x-content-type-options'\u001b[39m: \u001b[32m'nosniff'\u001b[39m,\n    \u001b[32m'x-xss-protection'\u001b[39m: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'cache-control'\u001b[39m: \u001b[32m'no-cache, no-store, max-age=0, must-revalidate'\u001b[39m,\n    pragma: \u001b[32m'no-cache'\u001b[39m,\n    expires: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'x-frame-options'\u001b[39m: \u001b[32m'DENY'\u001b[39m\n  },\n  raw: APIResponse: 200 \n    Server: nginx/1.18.0 (Ubuntu)\n    Date: Mon, 23 Feb 2026 10:09:51 GMT\n    Content-Type: application/json;charset=UTF-8\n    Transfer-Encoding: chunked\n    Connection: keep-alive\n    Vary: Origin\n    Vary: Access-Control-Request-Method\n    Vary: Access-Control-Request-Headers\n    X-Content-Type-Options: nosniff\n    X-XSS-Protection: 0\n    Cache-Control: no-cache, no-store, max-age=0, must-revalidate\n    Pragma: no-cache\n    Expires: 0\n    X-Frame-Options: DENY\n}\n"
+                          "text": "Project Manager List API response: {\n  status: \u001b[33m403\u001b[39m,\n  body: {\n    statusCode: \u001b[33m403\u001b[39m,\n    message: \u001b[32m'You are not authorized to access this resource.'\u001b[39m,\n    data: \u001b[1mnull\u001b[22m\n  },\n  headers: {\n    server: \u001b[32m'nginx/1.18.0 (Ubuntu)'\u001b[39m,\n    date: \u001b[32m'Tue, 07 Apr 2026 07:59:37 GMT'\u001b[39m,\n    \u001b[32m'content-type'\u001b[39m: \u001b[32m'application/json;charset=UTF-8'\u001b[39m,\n    \u001b[32m'transfer-encoding'\u001b[39m: \u001b[32m'chunked'\u001b[39m,\n    connection: \u001b[32m'keep-alive'\u001b[39m,\n    vary: \u001b[32m'Origin, Access-Control-Request-Method, Access-Control-Request-Headers'\u001b[39m,\n    \u001b[32m'x-content-type-options'\u001b[39m: \u001b[32m'nosniff'\u001b[39m,\n    \u001b[32m'x-xss-protection'\u001b[39m: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'cache-control'\u001b[39m: \u001b[32m'no-cache, no-store, max-age=0, must-revalidate'\u001b[39m,\n    pragma: \u001b[32m'no-cache'\u001b[39m,\n    expires: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'x-frame-options'\u001b[39m: \u001b[32m'DENY'\u001b[39m\n  },\n  raw: APIResponse: 403 \n    Server: nginx/1.18.0 (Ubuntu)\n    Date: Tue, 07 Apr 2026 07:59:37 GMT\n    Content-Type: application/json;charset=UTF-8\n    Transfer-Encoding: chunked\n    Connection: keep-alive\n    Vary: Origin\n    Vary: Access-Control-Request-Method\n    Vary: Access-Control-Request-Headers\n    X-Content-Type-Options: nosniff\n    X-XSS-Protection: 0\n    Cache-Control: no-cache, no-store, max-age=0, must-revalidate\n    Pragma: no-cache\n    Expires: 0\n    X-Frame-Options: DENY\n}\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-23T10:09:51.557Z",
+                      "startTime": "2026-04-07T07:59:37.079Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -542,52 +148,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "7d7fafa1939b53bb73ff-ca28c674f64a0cf51770",
-              "file": "myprofile/Profile.spec.ts",
-              "line": 5,
-              "column": 9
-            },
-            {
-              "title": "IM-12 - Verify that profile of Employee is displayed with all the information",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 8,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 404,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Profile: {\n  status: \u001b[33m200\u001b[39m,\n  body: {\n    statusCode: \u001b[33m200\u001b[39m,\n    message: \u001b[32m'Profile fetched successfully'\u001b[39m,\n    data: {\n      personalDetail: \u001b[36m[Object]\u001b[39m,\n      assestDetail: [],\n      experience: [],\n      education: [],\n      dependents: [],\n      promotions: \u001b[36m[Array]\u001b[39m,\n      reimbursement: \u001b[36m[Array]\u001b[39m\n    }\n  },\n  headers: {\n    server: \u001b[32m'nginx/1.18.0 (Ubuntu)'\u001b[39m,\n    date: \u001b[32m'Mon, 23 Feb 2026 10:09:53 GMT'\u001b[39m,\n    \u001b[32m'content-type'\u001b[39m: \u001b[32m'application/json;charset=UTF-8'\u001b[39m,\n    \u001b[32m'transfer-encoding'\u001b[39m: \u001b[32m'chunked'\u001b[39m,\n    connection: \u001b[32m'keep-alive'\u001b[39m,\n    vary: \u001b[32m'Origin, Access-Control-Request-Method, Access-Control-Request-Headers'\u001b[39m,\n    \u001b[32m'x-content-type-options'\u001b[39m: \u001b[32m'nosniff'\u001b[39m,\n    \u001b[32m'x-xss-protection'\u001b[39m: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'cache-control'\u001b[39m: \u001b[32m'no-cache, no-store, max-age=0, must-revalidate'\u001b[39m,\n    pragma: \u001b[32m'no-cache'\u001b[39m,\n    expires: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'x-frame-options'\u001b[39m: \u001b[32m'DENY'\u001b[39m\n  },\n  raw: APIResponse: 200 \n    Server: nginx/1.18.0 (Ubuntu)\n    Date: Mon, 23 Feb 2026 10:09:53 GMT\n    Content-Type: application/json;charset=UTF-8\n    Transfer-Encoding: chunked\n    Connection: keep-alive\n    Vary: Origin\n    Vary: Access-Control-Request-Method\n    Vary: Access-Control-Request-Headers\n    X-Content-Type-Options: nosniff\n    X-XSS-Protection: 0\n    Cache-Control: no-cache, no-store, max-age=0, must-revalidate\n    Pragma: no-cache\n    Expires: 0\n    X-Frame-Options: DENY\n}\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-02-23T10:09:53.662Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "7d7fafa1939b53bb73ff-d46afdea06d2d860b8f6",
-              "file": "myprofile/Profile.spec.ts",
-              "line": 46,
-=======
-              "id": "7d53943501e7d063956d-8b85ad0e348745d397b0",
-              "file": "performance/PerformanceData.spec.ts",
-              "line": 23,
->>>>>>> c314816 (Performance Data Api is automated)
+              "id": "801133b9a0791673770b-e6018eead2242df24881",
+              "file": "projectteamflow/ProjectManagerList.spec.ts",
+              "line": 34,
               "column": 9
             }
           ]
@@ -597,15 +160,9 @@
   ],
   "errors": [],
   "stats": {
-<<<<<<< HEAD
-    "startTime": "2026-02-18T06:33:40.285Z",
-    "duration": 3677.037000000477,
-    "expected": 1,
-=======
-    "startTime": "2026-04-07T06:26:32.201Z",
-    "duration": 5773.091000000015,
+    "startTime": "2026-04-07T07:59:32.530Z",
+    "duration": 5485.642999999225,
     "expected": 2,
->>>>>>> c314816 (Performance Data Api is automated)
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
