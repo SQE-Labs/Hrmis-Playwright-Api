@@ -65,19 +65,30 @@
   },
   "suites": [
     {
+<<<<<<< HEAD
       "title": "dashboard\\PunchDetails.spec.ts",
       "file": "dashboard/PunchDetails.spec.ts",
+=======
+      "title": "performance\\PerformanceData.spec.ts",
+      "file": "performance/PerformanceData.spec.ts",
+>>>>>>> c314816 (Performance Data Api is automated)
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
+<<<<<<< HEAD
           "title": "Punch Details",
           "file": "dashboard/PunchDetails.spec.ts",
+=======
+          "title": "Performance Data",
+          "file": "performance/PerformanceData.spec.ts",
+>>>>>>> c314816 (Performance Data Api is automated)
           "line": 3,
           "column": 6,
           "specs": [
             {
+<<<<<<< HEAD
               "title": "IM-03: Verify that the punch details are displayed correctly for a specific punch",
               "ok": true,
               "tags": [],
@@ -117,6 +128,9 @@
             },
             {
               "title": "IM-14 - Verify that tax form is displayed correctly for the Super Admin role",
+=======
+              "title": "IM-15 - Verify that performance data is retrieved successfully for the Super Admin role",
+>>>>>>> c314816 (Performance Data Api is automated)
               "ok": true,
               "tags": [],
               "tests": [
@@ -128,19 +142,19 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 8,
+                      "workerIndex": 5,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2584,
+                      "duration": 2040,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "Tax Form: {\n  status: \u001b[33m200\u001b[39m,\n  body: { data: [] },\n  headers: {\n    server: \u001b[32m'nginx/1.18.0 (Ubuntu)'\u001b[39m,\n    date: \u001b[32m'Mon, 23 Feb 2026 11:30:44 GMT'\u001b[39m,\n    \u001b[32m'content-type'\u001b[39m: \u001b[32m'application/json;charset=UTF-8'\u001b[39m,\n    \u001b[32m'transfer-encoding'\u001b[39m: \u001b[32m'chunked'\u001b[39m,\n    connection: \u001b[32m'keep-alive'\u001b[39m,\n    vary: \u001b[32m'Origin, Access-Control-Request-Method, Access-Control-Request-Headers'\u001b[39m,\n    \u001b[32m'x-content-type-options'\u001b[39m: \u001b[32m'nosniff'\u001b[39m,\n    \u001b[32m'x-xss-protection'\u001b[39m: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'cache-control'\u001b[39m: \u001b[32m'no-cache, no-store, max-age=0, must-revalidate'\u001b[39m,\n    pragma: \u001b[32m'no-cache'\u001b[39m,\n    expires: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'x-frame-options'\u001b[39m: \u001b[32m'DENY'\u001b[39m\n  },\n  raw: APIResponse: 200 \n    Server: nginx/1.18.0 (Ubuntu)\n    Date: Mon, 23 Feb 2026 11:30:44 GMT\n    Content-Type: application/json;charset=UTF-8\n    Transfer-Encoding: chunked\n    Connection: keep-alive\n    Vary: Origin\n    Vary: Access-Control-Request-Method\n    Vary: Access-Control-Request-Headers\n    X-Content-Type-Options: nosniff\n    X-XSS-Protection: 0\n    Cache-Control: no-cache, no-store, max-age=0, must-revalidate\n    Pragma: no-cache\n    Expires: 0\n    X-Frame-Options: DENY\n}\n"
+                          "text": "Performance Response: {\n  status: \u001b[33m200\u001b[39m,\n  body: {\n    data: {\n      userId: \u001b[33m271\u001b[39m,\n      performanceData: \u001b[36m[Object]\u001b[39m,\n      status: \u001b[33m0\u001b[39m,\n      isFilled: \u001b[33m1\u001b[39m,\n      isSubmitted: \u001b[33m1\u001b[39m\n    }\n  },\n  headers: {\n    server: \u001b[32m'nginx/1.18.0 (Ubuntu)'\u001b[39m,\n    date: \u001b[32m'Tue, 07 Apr 2026 06:26:36 GMT'\u001b[39m,\n    \u001b[32m'content-type'\u001b[39m: \u001b[32m'application/json;charset=UTF-8'\u001b[39m,\n    \u001b[32m'transfer-encoding'\u001b[39m: \u001b[32m'chunked'\u001b[39m,\n    connection: \u001b[32m'keep-alive'\u001b[39m,\n    vary: \u001b[32m'Origin, Access-Control-Request-Method, Access-Control-Request-Headers'\u001b[39m,\n    \u001b[32m'x-content-type-options'\u001b[39m: \u001b[32m'nosniff'\u001b[39m,\n    \u001b[32m'x-xss-protection'\u001b[39m: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'cache-control'\u001b[39m: \u001b[32m'no-cache, no-store, max-age=0, must-revalidate'\u001b[39m,\n    pragma: \u001b[32m'no-cache'\u001b[39m,\n    expires: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'x-frame-options'\u001b[39m: \u001b[32m'DENY'\u001b[39m\n  },\n  raw: APIResponse: 200 \n    Server: nginx/1.18.0 (Ubuntu)\n    Date: Tue, 07 Apr 2026 06:26:36 GMT\n    Content-Type: application/json;charset=UTF-8\n    Transfer-Encoding: chunked\n    Connection: keep-alive\n    Vary: Origin\n    Vary: Access-Control-Request-Method\n    Vary: Access-Control-Request-Headers\n    X-Content-Type-Options: nosniff\n    X-XSS-Protection: 0\n    Cache-Control: no-cache, no-store, max-age=0, must-revalidate\n    Pragma: no-cache\n    Expires: 0\n    X-Frame-Options: DENY\n}\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-02-23T11:30:42.218Z",
+                      "startTime": "2026-04-07T06:26:34.971Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -148,13 +162,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "d31f8336b12d20f20a8b-8de9b0f977f5881120c7",
-              "file": "myprofile/TaxForm.spec.ts",
+              "id": "7d53943501e7d063956d-2659d454953eb962414a",
+              "file": "performance/PerformanceData.spec.ts",
               "line": 5,
               "column": 9
             },
             {
-              "title": "IM-13 - Verify that tax form is displayed correctly for the Employee role",
+              "title": "IM-15 - Verify that performance data is retrieved successfully for the Employee role",
               "ok": true,
               "tags": [],
               "tests": [
@@ -166,6 +180,7 @@
                   "projectName": "",
                   "results": [
                     {
+<<<<<<< HEAD
                       "workerIndex": 10,
                       "parallelIndex": 0,
                       "status": "passed",
@@ -174,11 +189,25 @@
                       "stdout": [
                         {
                           "text": "Punch Details response: {\n  status: \u001b[33m200\u001b[39m,\n  body: { data: [] },\n  headers: {\n    server: \u001b[32m'nginx/1.18.0 (Ubuntu)'\u001b[39m,\n    date: \u001b[32m'Wed, 18 Feb 2026 06:33:43 GMT'\u001b[39m,\n    \u001b[32m'content-type'\u001b[39m: \u001b[32m'application/json;charset=UTF-8'\u001b[39m,\n    \u001b[32m'transfer-encoding'\u001b[39m: \u001b[32m'chunked'\u001b[39m,\n    connection: \u001b[32m'keep-alive'\u001b[39m,\n    vary: \u001b[32m'Origin, Access-Control-Request-Method, Access-Control-Request-Headers'\u001b[39m,\n    \u001b[32m'x-content-type-options'\u001b[39m: \u001b[32m'nosniff'\u001b[39m,\n    \u001b[32m'x-xss-protection'\u001b[39m: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'cache-control'\u001b[39m: \u001b[32m'no-cache, no-store, max-age=0, must-revalidate'\u001b[39m,\n    pragma: \u001b[32m'no-cache'\u001b[39m,\n    expires: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'x-frame-options'\u001b[39m: \u001b[32m'DENY'\u001b[39m\n  },\n  raw: APIResponse: 200 \n    Server: nginx/1.18.0 (Ubuntu)\n    Date: Wed, 18 Feb 2026 06:33:43 GMT\n    Content-Type: application/json;charset=UTF-8\n    Transfer-Encoding: chunked\n    Connection: keep-alive\n    Vary: Origin\n    Vary: Access-Control-Request-Method\n    Vary: Access-Control-Request-Headers\n    X-Content-Type-Options: nosniff\n    X-XSS-Protection: 0\n    Cache-Control: no-cache, no-store, max-age=0, must-revalidate\n    Pragma: no-cache\n    Expires: 0\n    X-Frame-Options: DENY\n}\n"
+=======
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 861,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Performance Response: {\n  status: \u001b[33m200\u001b[39m,\n  body: {\n    data: {\n      userId: \u001b[1mnull\u001b[22m,\n      performanceData: \u001b[1mnull\u001b[22m,\n      status: \u001b[33m0\u001b[39m,\n      isFilled: \u001b[33m0\u001b[39m,\n      isSubmitted: \u001b[33m0\u001b[39m\n    }\n  },\n  headers: {\n    server: \u001b[32m'nginx/1.18.0 (Ubuntu)'\u001b[39m,\n    date: \u001b[32m'Tue, 07 Apr 2026 06:26:37 GMT'\u001b[39m,\n    \u001b[32m'content-type'\u001b[39m: \u001b[32m'application/json;charset=UTF-8'\u001b[39m,\n    \u001b[32m'transfer-encoding'\u001b[39m: \u001b[32m'chunked'\u001b[39m,\n    connection: \u001b[32m'keep-alive'\u001b[39m,\n    vary: \u001b[32m'Origin, Access-Control-Request-Method, Access-Control-Request-Headers'\u001b[39m,\n    \u001b[32m'x-content-type-options'\u001b[39m: \u001b[32m'nosniff'\u001b[39m,\n    \u001b[32m'x-xss-protection'\u001b[39m: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'cache-control'\u001b[39m: \u001b[32m'no-cache, no-store, max-age=0, must-revalidate'\u001b[39m,\n    pragma: \u001b[32m'no-cache'\u001b[39m,\n    expires: \u001b[32m'0'\u001b[39m,\n    \u001b[32m'x-frame-options'\u001b[39m: \u001b[32m'DENY'\u001b[39m\n  },\n  raw: APIResponse: 200 \n    Server: nginx/1.18.0 (Ubuntu)\n    Date: Tue, 07 Apr 2026 06:26:37 GMT\n    Content-Type: application/json;charset=UTF-8\n    Transfer-Encoding: chunked\n    Connection: keep-alive\n    Vary: Origin\n    Vary: Access-Control-Request-Method\n    Vary: Access-Control-Request-Headers\n    X-Content-Type-Options: nosniff\n    X-XSS-Protection: 0\n    Cache-Control: no-cache, no-store, max-age=0, must-revalidate\n    Pragma: no-cache\n    Expires: 0\n    X-Frame-Options: DENY\n}\n"
+>>>>>>> c314816 (Performance Data Api is automated)
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
+<<<<<<< HEAD
                       "startTime": "2026-02-18T06:33:42.488Z",
+=======
+                      "startTime": "2026-04-07T06:26:37.041Z",
+>>>>>>> c314816 (Performance Data Api is automated)
                       "annotations": [],
                       "attachments": []
                     }
@@ -186,6 +215,7 @@
                   "status": "expected"
                 }
               ],
+<<<<<<< HEAD
               "id": "e7b4e11ea97aafad8c66-075b93076477e60e5abf",
               "file": "dashboard/PunchDetails.spec.ts",
               "line": 40,
@@ -553,6 +583,11 @@
               "id": "7d7fafa1939b53bb73ff-d46afdea06d2d860b8f6",
               "file": "myprofile/Profile.spec.ts",
               "line": 46,
+=======
+              "id": "7d53943501e7d063956d-8b85ad0e348745d397b0",
+              "file": "performance/PerformanceData.spec.ts",
+              "line": 23,
+>>>>>>> c314816 (Performance Data Api is automated)
               "column": 9
             }
           ]
@@ -562,9 +597,15 @@
   ],
   "errors": [],
   "stats": {
+<<<<<<< HEAD
     "startTime": "2026-02-18T06:33:40.285Z",
     "duration": 3677.037000000477,
     "expected": 1,
+=======
+    "startTime": "2026-04-07T06:26:32.201Z",
+    "duration": 5773.091000000015,
+    "expected": 2,
+>>>>>>> c314816 (Performance Data Api is automated)
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
